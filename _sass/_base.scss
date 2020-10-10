@@ -56,7 +56,7 @@ p {
         background-color: $text-color;
         border: none;
         width: 80%;
-        height: .5px;
+        height: 1px;
     }
 
 
@@ -232,7 +232,7 @@ p {
             margin-top: $main_wrapper_padding / 2;
             margin-left: 15px;
             margin-right: - $main_wrapper_padding / 2;
-            border-top: .5px solid $text-color;
+            border-top: 1px solid $text-color;
             left: 0;
             right: 0;
         }
