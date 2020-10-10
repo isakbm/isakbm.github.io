@@ -7,19 +7,19 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Biagio Brattoli
-    tagline: Computer Vision and Machine Learning researcher
+    name: Isak Buhl-Mortensen
+    tagline: Physicist and Data Scientist
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: biagio.brattoli@gmail.com
+    email: isakbuhl@gmail.com
     phone: 
-    website: bbrattoli.github.io/publications/ #do not add http://
-    linkedin: biagiobrattoli
-    github: bbrattoli
+    website: isakbm.github.io #do not add http://
+    linkedin: isak-buhl-mort
+    github: isakbm
     gitlab:
     bitbucket:
-    twitter: '@BiagioBrattoli'
+    twitter: '@isakphys'
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
@@ -28,17 +28,20 @@ sidebar:
       - idiom: English
         level: Fluent
 
-      - idiom: Italian
+      - idiom: Norwegian
         level: Native
 
-      - idiom: German
-        level: Colloquial
+      - idiom: Danish
+        level: Fluent
+
+      - idiom: Swedish
+        level: Fluent
 
     interests:
       - item: Guitar
         link:
 
-      - item: Basketball
+      - item: Climbing
         link:
 
       - item: Biking
@@ -47,9 +50,7 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      After a double master degree at KTH (Stochkolm, Sweden) and Politecnico di Torino (Torino, Italy), 
-      I pursued my passion for Computer Vision as researcher in the Heidelberg Collaboratory for Image procession, one of the biggest research group in Germany in the field, under the supervision of Bjoern Ommer.
-      Lately I successfully completed an internship at AWS in Pasadena under the supervision of Pietro Perona.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 news:
     title: News
@@ -306,4 +307,4 @@ skills:
         level: 75%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+    Designed by <a href="https://isakbm.github.io" target="_blank" rel="nofollow">Isak Buhl-Mortensen</a>. Based off of original designed by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

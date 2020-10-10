@@ -2,18 +2,21 @@
 layout: default
 ---
 
+{% include title.html %}
 
-{% include career-profile.html %}
+{% include education.html %}
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+{% include research.html %}
 
-{% include news.html %}
+{% include work.html %}
+
+{% include programming.html %}
+
+{% include public-speaking.html %}
 
 {% include publications.html %}
 
-{% include educationcomplete.html %}
+{% include skills.html %}
 
 {% include experiences.html %}
 
