@@ -47,9 +47,23 @@ p {
     height: 100%;
     min-height: 800px;
     color: $text-color;
+
     a {
         color: $text-color;
     }
+
+    hr {
+        background-color: $text-color;
+        border: none;
+        width: 80%;
+        height: .5px;
+    }
+
+
+    ul li, ol li {
+        margin-left: 20px;
+    }
+
     .profile-container {
         padding: 30px;
         //background: darken($theme-color, 10%);
@@ -76,7 +90,7 @@ p {
 
     .avatar {
         //used for profile image
-        max-width: 150px;
+        max-width: 200px;
         margin-bottom: 15px;
         border: 5px solid #fff;
         border-radius: 100%;
@@ -155,34 +169,6 @@ p {
     }
 }
 
-// h2 {
-//     overflow: hidden;
-//     text-align: center;
-// }
-  
-// h2:before,
-// h2:after {
-//     background-color: #000;
-//     content: "";
-//     display: inline-block;
-//     height: 1px;
-//     position: relative;
-//     vertical-align: middle;
-//     width: 50%;
-// }
-
-// h2:before {
-//     right: 0.5em;
-//     margin-left: -50%;
-// }
-
-// h2:after {
-//     left: 0.5em;
-//     margin-right: -50%;
-// }
-
-
-
 .main-wrapper {
 
     background: #fff;
@@ -246,7 +232,7 @@ p {
             margin-top: $main_wrapper_padding / 2;
             margin-left: 15px;
             margin-right: - $main_wrapper_padding / 2;
-            border-top: 1px solid grey;
+            border-top: .5px solid $text-color;
             left: 0;
             right: 0;
         }
