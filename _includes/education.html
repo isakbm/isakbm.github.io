@@ -2,8 +2,6 @@
 {% if career-profile %}
 <section class="section summary-section">
 
-
-
   <div class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
@@ -12,11 +10,7 @@
     <h2 class="text">Education</h2>
   </div>
 
-
-  <div class="summary">
-    {{ career-profile.summary | markdownify }}
-    <b>A detailed list of publications can be found <a href="https://bbrattoli.github.io/publications/">here</a>.</b>
-  </div><!--//summary-->
+  <img src="{{ site.baseurl }}/assets/images/timeline.svg" alt="timeline" class="image">
     
 </section><!--//section-->
 {% endif %}
