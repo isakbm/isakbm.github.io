@@ -45,6 +45,13 @@ There are 6 color schemes available:
 |---------|---------|---------|
 | <img src="https://webjeda.com/online-cv/assets/images/berry.jpg" width="300"/> | <img src="https://webjeda.com/online-cv/assets/images/orange.jpg" width="300"/> | <img src="https://webjeda.com/online-cv/assets/images/ceramic.jpg" width="300"/> |
 
+## Hosting Locally
+
+1. Install jekyll
+1. Navigate to the repo and fire off ``bundle init`` and ``bundle add jekyll``
+1. Fire up the service ``bundle exec jekyll serve``
+1. Your page is hosted at ``localhost:4000`` or some other port.
+
 ## Credits
 
 Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
