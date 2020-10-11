@@ -265,6 +265,8 @@ p {
                     margin-top: 0;
                     margin-bottom: 0;
                     font-weight: 500;
+                    top: 0;
+                    width: calc(100% - 80px);
                 }
                 .time {
                     position: absolute;
