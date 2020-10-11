@@ -13,7 +13,7 @@
     <div class="content">
       <div class="title">{{ c.name }}</div><div class="time">{{ c.year }}</div>
       <i>{{ c.location }}</i><br>
-      {{ c.coursename }} - {% if c.url %}<a href="{{ c.url }}">{{ c.url }}</a><br>{% endif %}
+      {{ c.coursename }}{% if c.url %}<br><a href="{{ c.url }}">{{ c.linkname | default 'link' }}</a><br>{% endif %}
       <hr>
     </div>
   </div>

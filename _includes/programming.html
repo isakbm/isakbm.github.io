@@ -1,4 +1,5 @@
 {% assign programming = site.data.data.programming %}
+{% assign sidebar = site.data.data.sidebar %}
 {% if programming %}
 <section class="section">
 
@@ -12,8 +13,8 @@
     <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
     <div class="content">
       <div class="title">{{ p.title }}</div><br>
-      {% if p.url %}<a href="{{ p.url }}">{{ p.url }}</a><br>{% endif %}
-      {{ p.description }}
+      {{ p.description }}<br>
+      github: {% if p.github %}<a href="http://github.com/{{ sidebar.github }}/{{ p.github }}">{{ p.github }}</a>{% endif %}
       <hr>
     </div>
   </div>

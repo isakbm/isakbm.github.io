@@ -13,7 +13,7 @@
     <div class="content">
       <div class="title">{{ paper.title }}</div><div class="time">{{ paper.year }}</div>
       {% if paper.publisher %}<i>{{ paper.publisher }}</i><br>{% endif %}
-      {% if paper.url %}<a href="{{ paper.url }}">{{ paper.url }}</a>{% endif %}
+      {% if paper.url %}<a href="{{ paper.url }}">{{ paper.linkname | default 'link' }}</a>{% endif %}
     </div>
     <hr>
   </div>

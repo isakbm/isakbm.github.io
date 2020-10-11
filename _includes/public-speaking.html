@@ -11,7 +11,9 @@
   <div class="listing">
     <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
     <div class="content">
-      {{ p.item }}
+      <div class="title">{{ p.title }}</div><div class="time">{{ p.year }}</div>
+      {% if p.location %}<i>{{ p.location }}<br></i>{% endif %}<br>
+      {{ p.description }}
       <hr>
     </div>
   </div>
