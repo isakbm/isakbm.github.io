@@ -32,7 +32,7 @@ p {
 }
 
 .wrapper {
-    background:$theme-color;
+    background: $theme-color;
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
@@ -53,10 +53,11 @@ p {
     }
 
     hr {
-        background-color: $text-color;
-        border: none;
+        //background-color: $text-color;
+        border-color: lighten($text-color, 50);
+        // border: none;
         width: 80%;
-        height: 1px;
+        //height: 1px;
     }
 
 
@@ -71,6 +72,42 @@ p {
         text-align: center;
         color: #fff;
     }
+
+    .skillset {
+        padding: 30px;
+        .item {
+            height: 30px;
+            margin-left: 20px;
+            position: relative;
+        }
+        .level-title {
+            // font-size: 14px;
+            // width: 30%;
+            // height: 100%;
+            // position: absolute;
+            // left: 0;
+            // text-align: right;
+            // color: $text-color;
+            line-height: 30px;
+        }
+        .level-bar {
+            position: absolute;
+            height: 30px;
+            left: 40%;
+            width: 100px;
+            top: 0;
+        }
+        .level-bar-inner {
+            height: 20px;
+            position: relative;
+            top: 5px;
+            width: 100%;
+            background: url("../images/icons/coffeebean-spaced.svg");
+            background-repeat: repeat-x;
+            background-size: 20px, 20px;
+        }
+    }
+
     .name {
         font-size: 32px;
         font-weight: 900;
@@ -123,25 +160,6 @@ p {
         margin-top: 0;
         margin-bottom: 5px;
     }
-    .education-container {
-        .item {
-            margin-bottom: 15px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-        .meta {
-            color: $text-color;
-            font-weight: 500;
-            margin-bottom: 0px;
-            margin-top: 0;
-        }
-        .time {
-            color: $text-color;
-            font-weight: 500;
-            margin-bottom: 0px;
-        }
-    }
     .languages-container {
         .lang-desc {
             color: $text-color
@@ -173,7 +191,8 @@ p {
 
     background: #fff;
     padding: $main_wrapper_padding;
-    padding-right: 340px;
+    padding-right: 310px;
+    padding-left: 40px;
 
     .title-section{
         margin-bottom: 60px;
@@ -199,8 +218,6 @@ p {
         margin-bottom: 60px;
 
         .section-title{
-            // font-size: 45px;
-            // font-weight: 500;
             position: relative;
             margin-top: 0;
             margin-bottom: 20px;
@@ -208,8 +225,6 @@ p {
             right: $main_wrapper_padding / 2;
             .icon {
                 display: block;
-                // margin-left: auto;
-                // margin-right: auto;
                 position: relative;
                 margin-top: 0;
                 margin-bottom: 20px;
@@ -272,6 +287,7 @@ p {
                     position: absolute;
                     right: 0;
                     top: 0;
+
                 }   
             }
 
@@ -281,9 +297,7 @@ p {
                 margin-bottom: 2px;
             }
 
-           //  list-style-image: url("{{ site.baseurl }}/assets/images/icons/publications.svg");
         }
-
 
     }
 
@@ -294,93 +308,7 @@ p {
         width: 100%;
     }
 
-    .experiences-section, .educations-section {
-        .item {
-            margin-bottom: 30px;
-        }
-    }
-    // .upper-row {
-    //     position: relative;
-    //     overflow: hidden;
-    //     margin-bottom: 2px;
-    // }
-    // .job-title, .degree {
-    //     color: $text-color;
-    //     font-size: 16px;
-    //     margin-top: 0;
-    //     margin-bottom: 0;
-    //     font-weight: 500;
-    // }
-    // .time {
-    //     position: absolute;
-    //     right: 0;
-    //     top: 0;
-    //     color: $text-grey;
-    // }
-    .company, .university {
-        margin-bottom: 10px;
-        color: $text-grey;
-    }
-
-    .project-title {
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    .projects-section {
-        .intro {
-            margin-bottom: 30px;
-        }
-        .item {
-            margin-bottom: 15px;
-        }
-    }
-
-    .publication-title {
-        font-size: 16px;
-        font-weight: 400;
-        color: $text-color;
-        margin-bottom: 1px;
-    }
-    .publication-authors {
-        font-style: italic;
-        color: $text-grey;
-        margin-bottom: 1px;
-    }
-    .publications-section {
-        .intro {
-            margin-bottom: 30px;
-        }
-        .item {
-            margin-bottom: 15px;
-        }
-    }
 }
-
-
-.skillset {
-    .item {
-        margin-bottom: 15px;
-        overflow: hidden;
-    }
-    .level-title {
-        font-size: 14px;
-        margin-top: 0;
-        margin-bottom: 12px;
-    }
-    .level-bar {
-        height: 12px;
-        background: $smoky-white;
-    }
-    .level-bar-inner {
-        height: 12px;
-        background: lighten($theme-color, 15%);
-    }
-}
-
-
-
 
 .footer {
     padding-top: 30px;

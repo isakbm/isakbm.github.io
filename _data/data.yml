@@ -283,19 +283,19 @@ skills:
         level: 100%
 
       - name: PyTorch
-        level: 90%
+        level: 60%
 
       - name: Tensorflow
         level: 60%
-
-      - name: Caffe
-        level: 80%
 
       - name: Matlab
         level: 90%
 
       - name: C/C++
-        level: 75%
+        level: 80%
+
+      - name: Linux
+        level: 80%
 
 footer: >
     Designed by <a href="https://isakbm.github.io" target="_blank" rel="nofollow">Isak Buhl-Mortensen</a>. Based off of original designed by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
