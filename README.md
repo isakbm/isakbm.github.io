@@ -6,6 +6,10 @@
 
 I am simply messing around with it, adding some of my own icons and changing the base css.
 
+## Example
+
+![alt text](assets/images/example.png)
+
 ## Hosting Locally
 
 1. Install jekyll
