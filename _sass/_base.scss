@@ -70,7 +70,13 @@ p {
         //background: darken($theme-color, 10%);
         //background: rgba(0, 0, 0, 0.2);
         text-align: center;
-        color: #fff;
+        color: $text-color;
+
+        h2 {
+            margin-top: -20px;
+            text-align: right;
+
+        }
     }
 
     .skillset {
