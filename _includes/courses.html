@@ -1,5 +1,5 @@
-{% assign career-profile = site.data.data.career-profile %}
-{% if career-profile %}
+{% assign courses = site.data.data.courses %}
+{% if courses %}
 <section class="section summary-section">
 
   <div class="section-title"> 
@@ -7,18 +7,17 @@
     <h2 class="text">Highligted Courses</h2>
   </div>
 
-  <ul>
-    <li>Computational Physics - NTNU - Trondheim 2012
-    TFY 4235 : http://www.ntnu.edu/studies/courses/TFY4235</li>
-    
-    <li>Classical Transport Theory - NTNU - Trondheim 2012
-    TFY 4275 : http://www.ntnu.edu/studies/courses/TFY4275</li>
-    
-    <li>Procedural and Object-Oriented Programming - NTNU - Trondheim 2012
-    TDT 4102: http://www.ntnu.edu/studies/courses/TDT4102</li>
-    
-    <li>Topics in Physics of Complex System - NBI - Copenhagen 2014</li>
-  </ul>
+  {% for c in courses %}
+  <div class="listing">
+    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <div class="content">
+      <div class="title">{{ c.name }}</div><div class="time">{{ c.year }}</div>
+      <i>{{ c.location }}</i><br>
+      {{ c.coursename }} - {% if c.url %}<a href="{{ c.url }}">{{ c.url }}</a><br>{% endif %}
+      <hr>
+    </div>
+  </div>
+  {% endfor %}
 
 </section><!--//section-->
 {% endif %}

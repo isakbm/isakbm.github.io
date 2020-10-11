@@ -1,6 +1,6 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
+career-profile: True # TODO get rid of this dependency
+
+edutimeline: True
 
 sidebar:
     about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
@@ -49,58 +49,158 @@ sidebar:
       - item: Biking
         link:
 
-career-profile:
-    title: Career Profile
-    summary: |
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-      # A sectuin and a list
+programming:
 
-      - foo
-      - bar
-      - var?
+  - title: Lead developer at The Meteorological Institute of Norway
+    description: Developed a new API called ODA (Observation Data Access), and its backend. The backend is programmed in golang and uses gRPC. It interfaces with distributed storage backends, cockroachdb and cassandra. Geohashes from google's s2geometry library were used as partition and cluster keys to accelerate geospatial searches.
 
-news:
-    title: News
-    intro: |
-        
+  - title: Image Decoding
+    description: Processing RAW image files from Huffman coded difference values
+    url: "https://github.com/isakbm/Canon-RAW"
+
+  - title: 3D Rendering
+    description: Raymarching the distance function for the 3D Mandelbulb fractal using OpenGL and GLSL (A)
+    url: https://github.com/isakbm/Mandelbulb
+
+  - title: Back propagation from scratch
+    description: Implementing a Neural-Net class in C++ with back propagation, and visualizing the learning in real time using OpenGL (B).
+    url: https://github.com/isakbm/Basic-Neural-Net
+
+  - title: Image recognition
+    description:  Used Haar Cascade for detecting LASER points in ROV images.
+    url: "https://github.com/isakbm/Detecting-LASER-Points"
+      
+  - title: Kaggle Problems
+    description: Use of Python libraries such as Pandas, OpenCV and scikit-learn for machine learning on kaggle problems, familiar with methods/models like decisions trees, k-means, LSTM.
+    url: https://github.com/isakbm/KaggleTitanic
+
+  - title: Genomic Data visualization
+    description: Helped out a PhD researcher in evolutionary genomics with visualizing and processing data from high throughput sequencing. (C)
+
+  - title: Monte-Carlo
+    description: Simulations of 2D Ising-model programmed in C++ for Computational Physics course at NTNU. Flipping magnetic spins in a temperature gradient and extrapolating in system size to estimate critical temperature and correlation-length exponent. (D)
+
+research:
+
+  - item: "Four publications in peer reviewed journals. Two in Journal of High Energy Physics and two in
+    Physical Review Letters."
+
+  - item: "PhD: Worked together with a team of highly competent researchers on the topic of integrability
+    applied to gauge/gravity duality."
+
+  - item: Participated in PhD schools in Canada, Italy, France, UK, Sweden and Denmark. Interacting with the wider theoretical physics community.
+
+  - item: The Norwegian Meteorological Institute - Researching the applicability of distributed databases for storing live weather data from IoT sensor networks.
+
+  - item: Poster presentation at EGU 2019. Resulted in a new storage system and API.
+
+  - item: SINTEF Energy Research - Researching the use of Machine Learning to predict Nordic power markets to improve bidding for wind, hydro and solar.
+
+work:
+
+  - workplace: SINTEF Energy Research
+    location: Trondheim, Norway
+    period: 2020 - present
+    role: Focused on short term hydro-power scheduling, working on SHOP - software used world wide to optimize hydro-power utility. Working on a research project attempting to aid power producers in optimizing bids in the energy market by making predictions for the intra-day market.
+
+  - workplace: The Norwegian Meteorological Institute
+    location: Oslo, Norway
+    period: 2018 - 2020
+    role: "Researcher and system developer. Responsible for real-time data processing and data handling. Contributor to post-processing/data-assimilation techniques for the improvement of local weather forecasts."
+
+  - workplace: National Instruments
+    location: Stockholm, Sweden
+    period: 2017 - 2018
+    role: Application Engineer. ELP Program. LabVIEW support.
+
+  - workplace: Copenhagen University - The Niels Bohr Institute 
+    period: 2015 - 2017
+    location: Copenhagen, Denmark
+    role: "Teaching assistant: Responsible for teaching and assistance, writing lecture notes in both string theory and quantum field theory I. On average 30 students, 9 hours of lecturing / assistance per week."
     
-    posts:
-        - time: June 2020
-          title: Outstanding Reviewer at CVPR 2020
+  - workplace: Norwegian University of Science and Technology
+    location: Trondheim, Norway
+    period: 2011 - 2012
+    role: "Teaching assistant: Responsible for exercise sessions and grading of assignments for ~ 35 students per course. On average 9 hours per week."
 
-        - time: June 2020
-          title: Article on Amazon Science https://www.amazon.science/blog/video-classifiers-learn-to-recognize-actions-they've-never-seen
-        
-        - time: February 2020
-          title: The work done during my internship was accepted as publication at CVPR 2020
-          
-        - time: July 2019
-          title: Begin Amazon AWS intership with P.Perona in Pasadena, CA
-          
-        - time: July 2019
-          title: One paper accepted at ICCV19
-          
-        - time: January 2019
-          title: Selected as reviewer for ICCV19
-        
-        - time: December 2018
-          title: Selected as reviewer for CVPR19
-        
-        - time: Sptember 2018
-          title: Two papers accepted as orals at GCPR (German Conference for Patter Recognition) as a result of two master thesis which I supervised
-        
-        - time: July 2018
-          title: Attending the International Summer School for Computer Vision (ICVSS) in Sicily, Italy
-        
-        - time: 2018
-          title: Paper accepted as poster at ECCV18 in Munich, Germany
-        
-        - time: 2017
-          title: Attending the Workshop on Behavior Analysis (BAFA, Better Analysis Fewer Animals) in Utrecht, Netherlands
-        
-        - time: 2017
-          title: Paper accepted as poster at CVPR17 in Honolulu, Hawaii
+
+achievements:
+
+  - item: Awarded 2nd place in the young researchers competition in Norway organized by Proscientia in 2009.
+
+  - item: Received the Lørup Scholar Stipend for MSc thesis work in 2014.
+
+
+presenting:
+
+  - item: Poster presentation in Oslo for the IB research project in 2009 with title Modelling the tide in the Nordåsvatn. Explaining the research to the public, roughly 100 people visited the even and the poster session.
+
+  - item: Presenting PhD. research at seminars at the Niels Bohr Institute in front of an audience of roughly 15 people.
+
+  - item: Presenting a specific topic (NHEK limit) within black-hole physics at the High energy physics Journal club hosted at the Niels Bohr Institute. Audience of roughly 15 people.
+
+  - item: Poster presentation at EGU - General Assembly 2019. Thousands of participants, poster hall.
+
+courses:
+
+  - name: Computational Physics
+    location: NTNU - Trondheim, Norway
+    year: "2012"
+    coursename: TFY 4235
+    url: http://www.ntnu.edu/studies/courses/TFY4235
+  
+  - name: Classical Transport Theory
+    location: NTNU - Trondheim, Norway
+    year: 2012
+    coursename: TFY 4275
+    url: http://www.ntnu.edu/studies/courses/TFY4275
+
+  - name: Procedural and Object-Oriented Programming
+    location: NTNU - Trondheim, Norway
+    year: 2012
+    coursename: TDT 4102
+    url: http://www.ntnu.edu/studies/courses/TDT4102
+
+  - name: Topics in Physics of Complex System
+    location: NBI - Copenhagen, Denmark
+    year: 2014
+
+schoolsconfs:
+
+  - name: EGU - General Assembly
+    year: "2019"
+    location: Vienna, Austria
+
+  - name: Integrability from Statistical systems to Gauge Theory
+    year: "2017"
+    location: Les Houches, France 
+    venue: Ecole de Physique des Houches
+
+  - name: Young Researchers in Integrability (GATIS)
+    year: "2016"
+    location: Durham, UK
+    venue: Durham University
+
+  - name: Mathematica Summer School
+    year: "2016"
+    location: Waterloo, Canada
+    venue: Perimeter Institute
+
+  - name: NORDITA - Winter School
+    year: "2015"
+    location: Stockholm, Sweden
+    venue: Nordic Institute for Theoretical Physics (NORDITA)
+
+  - name: Holography
+    year: "2015"
+    location: Copenhagen, Denmark
+    venue: The Niels Bohr Institute
+
+  - name: LACES
+    year: "2014"
+    location: Florence, Italy
+    venue: Galileo Galilei Institute
 
 education:
     - degree: Applied Scientists Intern at Amazon AWS
@@ -257,40 +357,45 @@ educationcomplete:
 publications:
     title: Publications
     intro: |
-      
 
     papers:
-      - title: "Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications"
-        authors: B. Brattoli, J. Tighe, F. Zhdanov, P. Perona, K. Chalupka
-        conference: CVPR, 2020
-        
-      - title: "MIC: Mining Interclass Characteristics for Improved Metric Learning"
-        authors: B. Brattoli*, K. Roth*, B. Ommer
-        conference: ICCV, 2019
 
-      - title: "Improving Spatiotemporal Self-Supervision by Deep Reinforcement Learning"
-        authors: B. Brattoli*, U. Buechler*, B. Ommer
-        conference: ECCV, 2018
+      - title: Next generation data storage system to support big data, IoT and machine learning at the - Norwegian Meteorological Inste 
+        year: 2019
+        url: https://www.essoar.org/doi/abs/10.1002/essoar.10500940.1
+        img: D
 
-      - title: "LSTM Self-Supervision for Detailed Behavior Analysis"
-        authors: B. Brattoli*, U. Buechler*, A. Wahl, M. Schwab, B. Ommer
-        conference: CVPR, 2017
+      - title : Asymptotic One-Point Functions in Gauge-String Duality with Defects
+        publisher: Physical Review Letters
+        year: 2017
+        url: https://arxiv.org/pdf/1704.07386
+        img: A
 
-      - title: "Cross and Learn: Cross-Modal Self-Supervision"
-        authors: N. Sayer, B. Brattoli, B. Ommer
-        conference: oral at GCPR, 2018
+      - title: One-point functions in AdS/dCFT and Integrability
+        publisher: PhD.
+        year: 2017
 
-      - title: "X-GAN: Improving Generative Adversarial Networks with ConveX Combinations"
-        authors: O. Blum, B. Brattoli, B. Ommer
-        conference: oral at GCPR, 2018
+      - title: A quantum check of AdS/dCFT
+        publisher: Journal of High Energy Physics
+        year: 2017
+        url: https://arxiv.org/pdf/1611.04603
+        img: C
 
-      - title: "Optogenetically stimulating intact rat corticospinal tract post-stroke restores motor control through regionalized functional circuit formation"
-        authors: A. S. Wahl*, U. Büchler*, A. Brändli, B. Brattoli, S. Musall, H. Kasper, B. V. Ineichen, F. Helmchen, B. Ommer & M. E. Schwab
-        conference: "Nature Communications, 2017"
-        
-      - title: "Early reduced behavioral activity induced by large strokes affects the efficiency of enriched environment in rats"
-        authors: A. S. Wahl, Erlebach, E, B. Brattoli, U. Büchler, J. Kaiser, V.B. Ineichen, A.C. Mosberger, S. Schneeberger, S. Imobersteg, M. Wieckhorst, M. Stirn, A. Schroeter, B. Ommer, M.E. Schwab
-        conference: "Journal of Cerebral Blood Flow & Metabolism, 2018"
+      - title: One-Loop One-point Functions in Gauge-Gravity Dualities with Defects
+        publisher: Physical Review Letters
+        year: 2016
+        url: https://arxiv.org/pdf/1606.01886
+
+      - title : One-point functions in AdS/CFT from matrix product states 
+        publisher: Journal of High Energy Physics
+        year: 2015
+        url: https://arxiv.org/pdf/1512.02532
+        img: B
+
+      - title: Conformal Symmetry for Black Holes
+        publisher: MSc.
+        year: 2014
+
 
 skills:
     title: Skills &amp; Proficiency

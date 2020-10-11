@@ -243,6 +243,46 @@ p {
             size: 20px;
         }
 
+        .listing{
+            padding-bottom: 20px;
+            margin-left: -5px;
+            .bullet{
+                display: block;
+                // margin-left: auto;
+                // margin-right: auto;
+                position: relative;
+                //margin-top: 0;
+                margin-bottom: -15px;
+                width: 10px;
+            }
+            .content{
+                position: relative;
+                padding-left: 30px;
+
+                .job-title, .degree, .title{
+                    color: $text-color;
+                    font-size: 16px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                }
+                .time {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }   
+            }
+
+            .upper-row {
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 2px;
+            }
+
+           //  list-style-image: url("{{ site.baseurl }}/assets/images/icons/publications.svg");
+        }
+
+
     }
 
     .image {
@@ -257,24 +297,24 @@ p {
             margin-bottom: 30px;
         }
     }
-    .upper-row {
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 2px;
-    }
-    .job-title, .degree {
-        color: $text-color;
-        font-size: 16px;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 500;
-    }
-    .time {
-        position: absolute;
-        right: 0;
-        top: 0;
-        color: $text-grey;
-    }
+    // .upper-row {
+    //     position: relative;
+    //     overflow: hidden;
+    //     margin-bottom: 2px;
+    // }
+    // .job-title, .degree {
+    //     color: $text-color;
+    //     font-size: 16px;
+    //     margin-top: 0;
+    //     margin-bottom: 0;
+    //     font-weight: 500;
+    // }
+    // .time {
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    //     color: $text-grey;
+    // }
     .company, .university {
         margin-bottom: 10px;
         color: $text-grey;

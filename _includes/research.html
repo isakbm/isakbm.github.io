@@ -1,30 +1,21 @@
-{% assign career-profile = site.data.data.career-profile %}
-{% if career-profile %}
-<section class="section summary-section">
-
-
+{% assign research = site.data.data.research %}
+{% if research %}
+<section class="section">
 
   <div class="section-title">
     <img src="{{ site.baseurl }}/assets/images/icons/research.svg" alt="icon" class="icon">
-    <h2 class="text">Research</h2>
+    <h2 class="text">Research Experience</h2>
   </div>
 
+  {% for r in research %}
+  <div class="listing">
+    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <div class="content">
+      {{ r.item }}
+      <hr>
+    </div>
+  </div>
+  {% endfor %}
 
-  <div class="summary">
-    <ul>
-      <li>Four publications in peer reviewed journals. Two in Journal of High Energy
-      Physics and two in Physical Review Letters.</li>
-      <li>PhD: Worked together with a team of highly competent researchers on the topic
-      of integrability applied to gauge/gravity duality.</li>
-      <li>Participated in PhD schools in Canada, Italy, France, UK, Sweden and Denmark.
-      Interacting with the wider theoretical physics community.</li>
-      <li>The Norwegian Meteorological Institute - Researching the applicability of
-      distributed databases for storing live weather data from IoT sensor networks.</li>
-      <li>Poster presentation at EGU 2019. Resulted in a new storage system and API.</li>
-      <li>SINTEF Energy Research - Researching the use of Machine Learning to predict
-      Nordic power markets to improve bidding for wind, hydro and solar.</li>
-    </ul>
-  </div><!--//summary-->
-    
 </section><!--//section-->
 {% endif %}

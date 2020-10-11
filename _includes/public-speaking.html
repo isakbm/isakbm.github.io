@@ -1,5 +1,5 @@
-{% assign career-profile = site.data.data.career-profile %}
-{% if career-profile %}
+{% assign presenting = site.data.data.presenting %}
+{% if presenting %}
 <section class="section summary-section">
 
   <div class="section-title">
@@ -7,17 +7,15 @@
     <h2 class="text">Public Speaking / Presentations</h2>
   </div>
 
-
-  <ul>
-    <li>Poster presentation in Oslo for the IB research project in 2009 with title Modelling the tide in the Nordåsvatn. Explaining the research to the public, roughly 100 people visited the even and the poster session.</li>
-
-    <li>Presenting PhD. research at seminars at the Niels Bohr Institute in front of an audience of roughly 15 people.</li>
-    
-    <li>Presenting a specific topic (NHEK limit) within black-hole physics at the High energy physics Journal club hosted at the Niels Bohr Institute. Audience of roughly 15 people.</li>
-    
-    <li>Poster presentation at EGU - General Assembly 2019. Thousands of participants, poster hall.</li>
-  </ul>
-
+  {% for p in presenting %}
+  <div class="listing">
+    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <div class="content">
+      <div class="title">{{ p.item }}</div>
+      <hr>
+    </div>
+  </div>
+  {% endfor %}
 
 </section><!--//section-->
 {% endif %}

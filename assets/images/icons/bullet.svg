@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2.6289895mm"
+   height="2.6289895mm"
+   viewBox="0 0 9.3153163 9.315317"
+   id="svg6437"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="bullet.svg">
+  <defs
+     id="defs6439" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="42.495234"
+     inkscape:cx="6.5994028"
+     inkscape:cy="-2.7782877"
+     inkscape:document-units="px"
+     inkscape:current-layer="g13250"
+     showgrid="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:window-width="2492"
+     inkscape:window-height="1417"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid6647"
+       spacingx="120"
+       spacingy="120"
+       originx="-115.34234"
+       originy="-955.34231" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata6442">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-115.34235,-87.704563)">
+    <g
+       transform="translate(204.1457,-153.71804)"
+       id="g13250">
+      <circle
+         transform="scale(1,-1)"
+         r="4.4701586"
+         cy="-246.08026"
+         cx="-84.145691"
+         id="path7089-4-0-6-7"
+         style="opacity:1;fill:#e3d5b9;fill-opacity:1;stroke:#352815;stroke-width:0.375;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

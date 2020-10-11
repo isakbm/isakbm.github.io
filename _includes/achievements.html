@@ -1,5 +1,5 @@
-{% assign career-profile = site.data.data.career-profile %}
-{% if career-profile %}
+{% assign achievements = site.data.data.achievements %}
+{% if achievements %}
 <section class="section summary-section">
 
   <div class="section-title"> 
@@ -7,10 +7,16 @@
     <h2 class="text">Achievements</h2>
   </div>
 
-  <ul>
-    <li>Awarded 2nd place in the young researchers competition in Norway organized by Proscientia in 2009.</li>
-    <li>Received the Lørup Scholar Stipend for MSc thesis work in 2014.</li>
-  </ul>
+  {% for a in achievements %}
+  <div class="listing">
+    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <div class="content">
+      <div class="title">{{ a.item }}</div>
+      <hr>
+    </div>
+  </div>
+  {% endfor %}
+
 
 </section><!--//section-->
 {% endif %}

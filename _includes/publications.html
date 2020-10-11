@@ -1,39 +1,23 @@
-{% assign career-profile = site.data.data.career-profile %}
-{% if career-profile %}
-<section class="section summary-section">
+{% assign publications = site.data.data.publications %}
+{% if publications %}
+<section class="section">
 
   <div class="section-title"> 
     <img src="{{ site.baseurl }}/assets/images/icons/publications.svg" alt="icon" class="icon">
     <h2 class="text">Publications / Thesis'</h2>
   </div>
 
-  <ul>
-    <li>Title : Asymptotic One-Point Functions in Gauge-String Duality with Defects  
-    Publisher: Physical Review Letters
-    https://arxiv.org/pdf/1704.07386 (A)</li>
-
-    <li>Title : One-point functions in AdS/CFT from matrix product states 
-    Publisher: Journal of High Energy Physics
-    https://arxiv.org/pdf/1512.02532 (B)</li>
-
-    <li>Title: A quantum check of AdS/dCFT
-    Publisher: Journal of High Energy Physics
-    https://arxiv.org/pdf/1611.04603 (C)</li>
-
-    <li>Title: One-Loop One-point Functions in Gauge-Gravity Dualities with Defects
-    Publisher: Physical Review Letters
-    https://arxiv.org/pdf/1606.01886</li>
-
-    <li>Title: Conformal Symmetry for Black Holes
-    Thesis: MSc. </li>
-
-    <li>Title: One-point functions in AdS/dCFT and Integrability
-    Thesis: PhD.</li>
-
-    <li>Title: Next generation data storage system to support big data, IoT and machine learning at the Norwegian Meteorological Inste 
-    https://www.essoar.org/doi/abs/10.1002/essoar.10500940.1 (D)</li>
-
-  </ul>
+  {% for paper in publications.papers %}
+  <div class="listing">
+    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <div class="content">
+      <div class="title">{{ paper.title }}</div><div class="time">{{ paper.year }}</div>
+      {% if paper.publisher %}<i>{{ paper.publisher }}</i><br>{% endif %}
+      {% if paper.url %}<a href="{{ paper.url }}">{{ paper.url }}</a>{% endif %}
+    </div>
+    <hr>
+  </div>
+  {% endfor %}
 
 </section><!--//section-->
 {% endif %}
