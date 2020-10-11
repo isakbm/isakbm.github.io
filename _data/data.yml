@@ -59,6 +59,26 @@ sidebar:
       - item: Flying
         link:
 
+skills:
+  
+    title: Skills &amp; Proficiency
+
+    toolset:
+
+      - name: Python
+        level: 100%
+
+      - name: PyTorch
+        level: 60%
+
+      - name: C/C++
+        level: 80%
+
+      - name: golang
+        level: 100%
+
+      - name: Linux
+        level: 80%
 
 programming:
 
@@ -289,27 +309,7 @@ publications:
         year: 2014
 
 
-skills:
-    title: Skills &amp; Proficiency
 
-    toolset:
-      - name: Python
-        level: 100%
-
-      - name: PyTorch
-        level: 60%
-
-      - name: Tensorflow
-        level: 60%
-
-      - name: Matlab
-        level: 90%
-
-      - name: C/C++
-        level: 80%
-
-      - name: Linux
-        level: 80%
 
 footer: >
     Designed by <a href="https://isakbm.github.io" target="_blank" rel="nofollow">Isak Buhl-Mortensen</a>. Based off of original designed by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
