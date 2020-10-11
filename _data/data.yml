@@ -26,7 +26,7 @@ sidebar:
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
 
-    
+
     languages:
 
       - idiom: English
@@ -63,25 +63,25 @@ sidebar:
 programming:
 
   - title: Data Scientist at SINTEF Energy Research
-    description: Developing models using machine learning for the Nordic power market. Meteorological, demographic and power-market data is cleaned, featured, and fed to models using keras, scikit, and more. Ongoing research and development.
+    description: Developing models using machine learning for the Nordic power market. Meteorological, demographic and power-market data is cleaned, featured, and fed to models using keras, scikit, and more. Ongoing research and development. (A)
 
   - title: Lead developer at The Meteorological Institute of Norway
-    description: Developed a new API called ODA (Observation Data Access), and its backend. The backend is programmed in golang and uses gRPC. It interfaces with distributed storage backends, cockroachdb and cassandra. Geohashes from google's s2geometry library were used as partition and cluster keys to accelerate geospatial searches. (A)
+    description: Developed a new API called ODA (Observation Data Access), and its backend. The backend is programmed in golang and uses gRPC. It interfaces with distributed storage backends, cockroachdb and cassandra. Geohashes from google's s2geometry library were used as partition and cluster keys to accelerate geospatial searches. (B)
 
   - title: Canon-RAW Image Decoding
     description: Processing RAW image files from Huffman coded difference values
     github: Canon-RAW
 
   - title: 3D Rendering
-    description: Raymarching the distance function for the 3D Mandelbulb fractal using OpenGL and GLSL (B)
+    description: Raymarching the distance function for the 3D Mandelbulb fractal using OpenGL and GLSL (C)
     github: Mandelbulb
 
   - title: Back propagation from scratch
-    description: Implementing a Neural-Net class in C++ with back propagation, and visualizing the learning in real time using OpenGL (C).
+    description: Implementing a Neural-Net class in C++ with back propagation, and visualizing the learning in real time using OpenGL (D).
     github: Basic-Neural-Net
 
   - title: Image recognition
-    description:  Used Haar Cascade for detecting LASER points in ROV images. (D)
+    description:  Used Haar Cascade for detecting LASER points in ROV images. (E)
     github: Detecting-LASER-Points
       
   - title: Kaggle Problems
@@ -89,10 +89,10 @@ programming:
     github: KaggleTitanic
 
   - title: Genomic Data visualization
-    description: Helped out a PhD researcher in evolutionary genomics with visualizing and processing data from high throughput sequencing. (E)
+    description: Helped out a PhD researcher in evolutionary genomics with visualizing and processing data from high throughput sequencing. (F)
 
   - title: Potts Model, Monte Carlo
-    description: Simulations of 2D q-state Potts model (generalized Ising-model). Programmed in C++ for Computational Physics course at NTNU. Heat bath algorithm that flips magnetic spins in a temperature gradient using monte carlo sampling and extrapolating in system size to estimate critical temperature and correlation-length exponent. (F)
+    description: Simulations of 2D q-state Potts model (generalized Ising-model). Programmed in C++ for Computational Physics course at NTNU. Heat bath algorithm that flips magnetic spins in a temperature gradient using monte carlo sampling and extrapolating in system size to estimate critical temperature and correlation-length exponent. (G)
 
 
 research:
