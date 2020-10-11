@@ -26,7 +26,9 @@ sidebar:
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
 
+    
     languages:
+
       - idiom: English
         level: Fluent
 
@@ -39,7 +41,9 @@ sidebar:
       - idiom: Swedish
         level: Fluent
 
+
     interests:
+
       - item: Guitar
         link:
 
@@ -47,6 +51,12 @@ sidebar:
         link:
 
       - item: Biking
+        link:
+
+      - item: Travel
+        link:
+
+      - item: Flying
         link:
 
 

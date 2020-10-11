@@ -56,7 +56,7 @@ p {
         //background-color: $text-color;
         border-color: lighten($text-color, 50);
         // border: none;
-        width: 80%;
+        width: calc(100% - 60px);
         //height: 1px;
     }
 
