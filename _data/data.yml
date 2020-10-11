@@ -169,6 +169,10 @@ presenting:
 
 courses:
 
+  - name: Topics in Physics of Complex System
+    location: NBI - Copenhagen, Denmark
+    year: 2014
+
   - name: Computational Physics
     location: NTNU - Trondheim, Norway
     year: "2012"
@@ -190,10 +194,7 @@ courses:
     linkname: ntnu/TDT4102
     url: http://www.ntnu.edu/studies/courses/TDT4102
 
-  - name: Topics in Physics of Complex System
-    location: NBI - Copenhagen, Denmark
-    year: 2014
-
+    
 schoolsconfs:
 
   - name: EGU - General Assembly
