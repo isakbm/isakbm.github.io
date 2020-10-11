@@ -9,13 +9,13 @@ sidebar:
     # Profile information
     name: Isak Buhl-Mortensen
     tagline: Physicist and Data Scientist
-    avatar: profile2.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: profile4.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     dob: 22/06/1991
     nationality: Norwegian
     email: isakbuhl@gmail.com
-    phone: 
+    phone: (+47) 94 86 11 08
     website: isakbm.github.io #do not add http://
     linkedin: isak-buhl-mort
     github: isakbm
@@ -52,10 +52,13 @@ sidebar:
 
 programming:
 
+  - title: Data Scientist at SINTEF Energy Research
+    description: Developing models using machine learning for the Nordic power market. Meteorological, demographic and power-market data is cleaned, featured, and fed to models using keras, scikit, and more. Ongoing research and development.
+
   - title: Lead developer at The Meteorological Institute of Norway
     description: Developed a new API called ODA (Observation Data Access), and its backend. The backend is programmed in golang and uses gRPC. It interfaces with distributed storage backends, cockroachdb and cassandra. Geohashes from google's s2geometry library were used as partition and cluster keys to accelerate geospatial searches. (A)
 
-  - title: Image Decoding
+  - title: Canon-RAW Image Decoding
     description: Processing RAW image files from Huffman coded difference values
     github: Canon-RAW
 
@@ -78,8 +81,8 @@ programming:
   - title: Genomic Data visualization
     description: Helped out a PhD researcher in evolutionary genomics with visualizing and processing data from high throughput sequencing. (E)
 
-  - title: Monte-Carlo
-    description: Simulations of 2D Ising-model programmed in C++ for Computational Physics course at NTNU. Flipping magnetic spins in a temperature gradient and extrapolating in system size to estimate critical temperature and correlation-length exponent. (F)
+  - title: Potts Model, Monte Carlo
+    description: Simulations of 2D q-state Potts model (generalized Ising-model). Programmed in C++ for Computational Physics course at NTNU. Heat bath algorithm that flips magnetic spins in a temperature gradient using monte carlo sampling and extrapolating in system size to estimate critical temperature and correlation-length exponent. (F)
 
 
 research:

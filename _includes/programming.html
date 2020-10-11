@@ -14,7 +14,7 @@
     <div class="content">
       <div class="title">{{ p.title }}</div><br>
       {{ p.description }}<br>
-      github: {% if p.github %}<a href="http://github.com/{{ sidebar.github }}/{{ p.github }}">{{ p.github }}</a>{% endif %}
+      {% if p.github %}github: <a href="http://github.com/{{ sidebar.github }}/{{ p.github }}">{{ p.github }}</a>{% endif %}
       <hr>
     </div>
   </div>
