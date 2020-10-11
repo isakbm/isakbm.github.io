@@ -9,7 +9,7 @@ sidebar:
     # Profile information
     name: Isak Buhl-Mortensen
     tagline: Physicist and Data Scientist
-    avatar: profile4.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: profile6.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     dob: 22/06/1991
@@ -60,7 +60,7 @@ sidebar:
         link:
 
 skills:
-  
+
     title: Skills &amp; Proficiency
 
     toolset:
