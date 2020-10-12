@@ -9,16 +9,12 @@
     <div class="level-title">{{ skill.name }}</div>
 
     <div class="level-bar">
-      <div class="level-bar-inner" data-level="{{ skill.level }}">
-      </div>
+      {% for i in (1..skill.level) %}
+        <img src="{{ site.baseurl }}/assets/images/icons/coffeebean.svg" class="level-counter" />
+      {% endfor %}
     </div>
 
-
   </div>
-  {% endfor %}
-
-  {% for i in (1..4) %}
-    <img src="{{ site.baseurl }}/assets/images/icons/coffeebean.svg" />
   {% endfor %}
 
 </div>

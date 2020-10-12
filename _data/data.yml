@@ -66,19 +66,19 @@ skills:
     toolset:
 
       - name: Python
-        level: 100%
+        level: 5
 
       - name: PyTorch
-        level: 60%
+        level: 3
 
       - name: C/C++
-        level: 80%
+        level: 4
 
       - name: golang
-        level: 100%
+        level: 5
 
       - name: Linux
-        level: 80%
+        level: 4
 
 programming:
 
