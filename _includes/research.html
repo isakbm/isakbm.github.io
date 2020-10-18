@@ -2,14 +2,21 @@
 {% if research %}
 <section class="section">
 
-  <div class="section-title">
-    <img src="{{ site.baseurl }}/assets/images/icons/research.svg" alt="icon" class="icon">
+  <div class="section-title"> 
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/research.svg#icon"></use>
+    </svg>
     <h2 class="text">Research Experience</h2>
   </div>
 
   {% for r in research %}
   <div class="listing">
-    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
     <div class="content">
       {{ r.item }}
       <hr>

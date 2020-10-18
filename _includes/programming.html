@@ -3,14 +3,22 @@
 {% if programming %}
 <section class="section">
 
-  <div class="section-title">
-    <img src="{{ site.baseurl }}/assets/images/icons/punchcard.svg" alt="icon" class="icon">
+  <div class="section-title"> 
+      <svg class="icon-circle" viewBox="0 0 100 100">
+        <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+      </svg>
+      <svg class="icon" viewBox="0 0 100 100">
+        <use href="{{ site.baseurl }}/assets/images/icons/punchcard.svg#icon"></use>
+      </svg>
     <h2 class="text">Programming Experience</h2>
   </div>
 
   {% for p in programming %}
   <div class="listing">
-    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
+    <!-- <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet"> -->
     <div class="content">
       <div class="title">{{ p.title }}</div><br>
       {{ p.description }}<br>

@@ -1,13 +1,28 @@
 {% assign timeline = site.data.data.edutimeline %}
 {% if timeline %}
-<section class="section summary-section">
+<section class="section">
 
   <div class="section-title"> 
-    <img src="{{ site.baseurl }}/assets/images/icons/education.svg" alt="icon" class="icon">
+      <svg class="icon-circle" viewBox="0 0 100 100">
+        <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+      </svg>
+      <svg class="icon" viewBox="0 0 100 100">
+        <use href="{{ site.baseurl }}/assets/images/icons/education.svg#icon"></use>
+      </svg>
     <h2 class="text">Education</h2>
   </div>
+
+  <div class="timeline">
+    <svg class="lines" viewBox="0 0 100 30" >
+      <use href="{{ site.baseurl }}/assets/images/timeline.svg#lines"></use>
+    </svg>
+    <svg class="pins" viewBox="0 0 100 30" width="100%" >
+      <use href="{{ site.baseurl }}/assets/images/timeline.svg#pins"></use>
+    </svg>
+    <svg class="text" viewBox="0 0 100 30" width="100%" >
+      <use href="{{ site.baseurl }}/assets/images/timeline.svg#text"></use>
+    </svg>
+  </div>
   
-   <img src="{{ site.baseurl }}/assets/images/timeline.svg" alt="timeline" class="image">
-    
 </section><!--//section-->
 {% endif %}

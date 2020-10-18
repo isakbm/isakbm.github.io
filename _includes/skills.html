@@ -10,7 +10,10 @@
 
     <div class="level-bar">
       {% for i in (1..skill.level) %}
-        <img src="{{ site.baseurl }}/assets/images/icons/coffeebean.svg" class="level-counter" />
+        <svg class="level-counter" viewBox="0 0 20 20">
+          <use href="{{ site.baseurl }}/assets/images/icons/coffeebean.svg#bean"></use>
+          <!-- <circle stroke-width="5" stroke="#352815" cy="50" cx="50" r="45" fill="#e3d5b9"/> -->
+        </svg>
       {% endfor %}
     </div>
 

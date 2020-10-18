@@ -2,14 +2,21 @@
 {% if presenting %}
 <section class="section summary-section">
 
-  <div class="section-title">
-    <img src="{{ site.baseurl }}/assets/images/icons/public-speaking.svg" alt="icon" class="icon">
-    <h2 class="text">Public Speaking / Presentations</h2>
-  </div>
+  <div class="section-title"> 
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/public-speaking.svg#icon"></use>
+    </svg>
+  <h2 class="text">Public Speaking / Presentations</h2>
+</div>
 
   {% for p in presenting %}
   <div class="listing">
-    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
     <div class="content">
       <div class="title">{{ p.title }}</div><div class="time">{{ p.year }}</div>
       {% if p.location %}<i>{{ p.location }}<br></i>{% endif %}<br>

@@ -3,13 +3,20 @@
 <section class="section summary-section">
 
   <div class="section-title"> 
-    <img src="{{ site.baseurl }}/assets/images/icons/courses.svg" alt="icon" class="icon">
-    <h2 class="text">Highligted Courses</h2>
-  </div>
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/courses.svg#icon"></use>
+    </svg>
+  <h2 class="text">Highligted Courses</h2>
+</div>
 
   {% for c in courses %}
   <div class="listing">
-    <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
     <div class="content">
       <div class="title">{{ c.name }}</div><div class="time">{{ c.year }}</div>
       <i>{{ c.location }}</i><br>

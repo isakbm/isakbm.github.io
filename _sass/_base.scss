@@ -46,10 +46,10 @@ p {
     width: 280px;
     height: 100%;
     min-height: 800px;
-    color: $text-color;
+    color: $text-color-secondary;
 
     a {
-        color: $text-color;
+        color: $text-color-secondary;
     }
 
     hr {
@@ -70,7 +70,7 @@ p {
         //background: darken($theme-color, 10%);
         //background: rgba(0, 0, 0, 0.2);
         text-align: center;
-        color: $text-color;
+        color: $text-color-secondary;
 
         padding-bottom: 0px;
 
@@ -105,11 +105,19 @@ p {
             left: 40%;
             width: 100px;
             top: 0;
+            align-items: center;
+            svg : {
+                width: 15px;
+                margin-top: 7.5px;
+                margin-bottom: 7.5px;
+                fill: $text-color-secondary;
+            }
         }
         .level-counter {
             width: 15px;
             margin-top: 7.5px;
             margin-bottom: 7.5px;
+            fill: $text-color-secondary;
         }
         .level-bar-inner {
             height: 20px;
@@ -129,7 +137,7 @@ p {
         margin-bottom: 10px;
     }
     .tagline {
-        color: $text-color;
+        color: $text-color-secondary;
         font-size: 16px;
         font-weight: 400;
         margin-top: 0;
@@ -143,9 +151,9 @@ p {
         //used for profile image
         max-width: 200px;
         margin-bottom: 15px;
-        border: 5px solid #fff;
+        // border: 5px solid #fff;
         border-radius: 100%;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
     .contact-list {
         .fas, .fab {
@@ -201,12 +209,15 @@ p {
     }
 }
 
+
+
 .main-wrapper {
 
     background: #fff;
     padding: $main_wrapper_padding;
     padding-right: 310px;
     padding-left: 40px;
+    color: $text-color;
 
     .title-section{
         margin-bottom: 60px;
@@ -234,21 +245,27 @@ p {
         .section-title{
             position: relative;
             margin-top: 0;
-            margin-bottom: 20px;
+            margin-bottom: 60px;
             left: - $main_wrapper_padding / 2;
             right: $main_wrapper_padding / 2;
-            .icon {
+            .icon-circle, .icon {
                 display: block;
-                position: relative;
+                position: absolute;
                 margin-top: 0;
                 margin-bottom: 20px;
                 width: $main_wrapper_padding;
+                fill: $theme-color;
+            }
+            .icon-circle {
+                fill: $text-color-secondary;
+                position: absolute;
             }
             a, p, h2, .text{
                 color: $text-color;
                 font-weight: 500;
-                position: absolute;
+                position: relative;
                 left: 80px;
+                top: 0px;
                 bottom: 30px;
                 font-size: 15px;
                 font-weight: bold;
@@ -284,6 +301,8 @@ p {
                 //margin-top: 0;
                 margin-bottom: -15px;
                 width: 10px;
+                fill: $text-color-secondary;
+                stroke: $theme-color;
             }
             .content{
                 position: relative;
@@ -316,12 +335,25 @@ p {
 
     }
 
-    .image {
+.timeline {
+    position: relative;
+    padding-bottom: 160px;
+    .lines, .pins, .text {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        position: absolute;
+        width:100%;
     }
+    .lines {
+        stroke: $text-color;
+    }
+    .text {
+        fill: $text-color;
+    }
+    .pins {
+        fill: $text-color-secondary;
+    }
+}
+
 
 }
 
