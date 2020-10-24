@@ -338,7 +338,7 @@ p {
 
 .timeline {
     position: relative;
-    padding-bottom: 160px;
+    // padding-bottom: 160px;
     .lines, .pins, .text {
         display: block;
         position: absolute;
@@ -355,6 +355,7 @@ p {
         fill: $text-color-secondary;
         stroke: $theme-color;
         stroke-width: 0;
+        position: relative;
     }
 }
 
