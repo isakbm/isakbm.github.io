@@ -216,13 +216,21 @@ p {
 
 .main-wrapper {
 
-    background: #fff;
-    // position: relative;
-    padding: $main_wrapper_padding;
+    // background: #fff;
+    // // position: relative;
+    // padding: $main_wrapper_padding;
+    // height: 1420px;
+    // width: 1000px - $sidebar_width;
+    // padding-top: 30px;
+    // padding-right: 30px;
+    // padding-left: 40px;
+    // color: $text-color;
+
     height: 1420px;
-    width: 1000px - $sidebar_width;
-    padding-top: 30px;
-    padding-right: 30px;
+
+    background: #fff;
+    padding: $main_wrapper_padding;
+    padding-right: 310px;
     padding-left: 40px;
     color: $text-color;
 
@@ -252,7 +260,8 @@ p {
         .section-title{
             position: relative;
             margin-top: 0;
-            margin-bottom: 60px;
+            height: $main_wrapper_padding;
+            margin-bottom: 30px;
             left: - $main_wrapper_padding / 2;
             right: $main_wrapper_padding / 2;
             .icon-circle, .icon {
@@ -269,23 +278,26 @@ p {
             }
             a, p, h2, .text{
                 color: $text-color;
-                font-weight: 500;
-                position: relative;
-                left: 70px;
-                top: 10px;
-                font-size: 15px;
-                font-weight: bold;
+                background-color: white;
+                position: absolute;
+                padding-left: 10px;
+                padding-right: 10px;
+                left: 80px;
+                top: -5px;
+                font-size: 25px;
+                font-weight: normal;
             }
         }
         // this is the horizontal line that goes from icon towards the right
         .section-title::before{
             content: "";
-            position: absolute;
+            position: relative;
             display: block;
             margin-top: $main_wrapper_padding / 2;
             margin-left: 15px;
             margin-right: - $main_wrapper_padding / 2;
             border-top: 1px solid $text-color-secondary;
+            top: $main_wrapper_padding / 2;
             left: 0;
             right: 0;
         }
@@ -294,11 +306,13 @@ p {
             padding-bottom: 20px;
             margin-left: - $main_wrapper_padding / 2;
             size: 20px;
+            border-left: 1px solid red;
         }
 
         .listing{
             padding-bottom: 0px;
             margin-left: -7px;
+
             .bullet{
                 display: block;
                 // margin-left: auto;
@@ -331,13 +345,11 @@ p {
 
                 }   
             }
-
             .upper-row {
                 position: relative;
                 overflow: hidden;
                 margin-bottom: 2px;
             }
-
         }
 
     }
