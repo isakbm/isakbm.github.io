@@ -23,7 +23,9 @@
       <div class="title">{{ p.title }}</div><br>
       {{ p.description }}<br>
       {% if p.github %}github: <a href="http://github.com/{{ sidebar.github }}/{{ p.github }}">{{ p.github }}</a>{% endif %}
+      {% if forloop.index != forloop.length %}
       <hr>
+      {% endif %}
     </div>
   </div>
   {% endfor %}

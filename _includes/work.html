@@ -9,7 +9,7 @@
     <svg class="icon" viewBox="0 0 100 100">
       <use href="{{ site.baseurl }}/assets/images/icons/work.svg#icon"></use>
     </svg>
-  <h2 class="text">Work</h2>
+  <h2 class="text">Work Experience</h2>
   </div>  
 
   {% for w in work %}
@@ -18,10 +18,10 @@
       <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
     </svg>
     <div class="content">
-      <div class="job-title">{{ w.workplace }}</div><div class="time">{{ w.period }}</div>
-      {% if w.location %}<i>{{ w.location }}</i><br>{% endif %}<br>
-      {% if w.role %}{{ w.role }}{% endif %}
-      <hr>
+      <div class="job-title">{{ w.workplace }} - <i>{{w.job_title}}</i></div><div class="time">{{ w.period }}</div>
+      <!-- {% if w.location %}<i>{{ w.location }}</i><br>{% endif %} -->
+      {% if w.role %}<br>{{ w.role }}{% endif %}
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
     </div>
   </div>
   {% endfor %}
