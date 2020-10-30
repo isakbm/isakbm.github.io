@@ -1,4 +1,5 @@
 {% assign title = site.data.data.sidebar %}
+{% assign heading = site.data.data.heading %}
 {% if title %}
 <section class="title-section">
 
@@ -7,14 +8,19 @@
   </h2>
 
   <div class="keywords">
-    physicist | data scientist | developer
+    Data Scientist & Developer
   </div>
   
   <div class="summary">
-    I have a background in theoretical particle physics. I'm keen to learn, excited about
-    technology, and passionate about solving problems using computers. I am looking
-    to apply and expand my skill-set by solving real-world problems.
-  </div><!--//summary-->
+  {% for line in heading.lines %}
+    {{ line.line }} <br>
+  {% endfor %}
+  </div>
 
-</section><!--//section-->
+</section>
 {% endif %}
+
+
+<!-- I have a background in theoretical particle physics. I'm keen to learn, excited about
+technology, and passionate about solving problems using computers. I am looking
+to apply and expand my skill-set by solving real-world problems. -->

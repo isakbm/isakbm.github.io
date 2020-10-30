@@ -3,7 +3,7 @@
 $main_wrapper_padding: 60px;
 $sidebar_width: 280px;
 $page_width: 1000px;
-$page_height: 1420px;
+$page_height: 1520px;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -226,7 +226,7 @@ p {
     // padding-left: 40px;
     // color: $text-color;
 
-    height: 1420px;
+    height: $page_height;
 
     background: #fff;
     padding: $main_wrapper_padding;
