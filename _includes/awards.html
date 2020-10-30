@@ -1,0 +1,18 @@
+{% assign achievements = site.data.data.achievements %}
+{% if achievements %}
+<div class="languages-container container-block">
+
+  <h2 class="container-block-title">
+    Awards
+  </h2>
+
+  <ul class="list-unstyled interests-list">
+    {%for achievement in achievements %}
+    <li>
+      {{ achievement.year }} - {{ achievement.item }}
+    </li>
+    {% endfor %}
+  </ul>
+
+</div><!--//interests-->
+{% endif %}

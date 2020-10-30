@@ -1,0 +1,13 @@
+{% assign keywords = site.data.data.sidebar.keywords %}
+{% if keywords %}
+<div class="languages-container container-block">
+
+  <ul class="list-unstyled interests-list">
+    {%for keyword in keywords %}
+      {{ keyword.word }}
+      {% if forloop.index != forloop.length %} | {% endif %}
+    {% endfor %}
+  </ul>
+
+</div><!--//interests-->
+{% endif %}
