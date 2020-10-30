@@ -1,5 +1,5 @@
-{% assign presenting = site.data.data.presenting %}
-{% if presenting %}
+{% assign achievements = site.data.data.achievements %}
+{% if achievements %}
 <section class="section summary-section">
 
   <div class="section-title"> 
@@ -7,24 +7,22 @@
       <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
     </svg>
     <svg class="icon" viewBox="0 0 100 100">
-      <use href="{{ site.baseurl }}/assets/images/icons/public-speaking.svg#icon"></use>
+      <use href="{{ site.baseurl }}/assets/images/icons/achievements.svg#icon"></use>
     </svg>
-  <h2 class="text">Public Speaking / Presentations</h2>
+  <h2 class="text">Achievements</h2>
 </div>
 
-  {% for p in presenting %}
+  {% for a in achievements %}
   <div class="listing">
     <svg class="bullet" viewBox="0 0 100 100">
       <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
     </svg>
     <div class="content">
-      <div class="title">{{ p.title }}</div><div class="time">{{ p.year }}</div>
-      {% if p.location %}<i>{{ p.location }}<br></i>{% endif %}<br>
-      {{ p.description }}
+      <div class="title">{{ a.item }}</div><div class="time">{{ a.year }}</div>
       <hr>
     </div>
   </div>
   {% endfor %}
 
-</section><!--//section-->
+</section>
 {% endif %}

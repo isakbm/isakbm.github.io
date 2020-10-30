@@ -1,0 +1,30 @@
+{% assign work = site.data.data-science.work %}
+{% if work %}
+<section class="section">
+
+  <div class="section-title"> 
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/work.svg#icon"></use>
+    </svg>
+  <h2 class="text">Work Experience</h2>
+  </div>  
+
+  {% for w in work %}
+  <div class="listing">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
+    <div class="content">
+      <div class="job-title">{{ w.workplace }} - <i>{{w.job_title}}</i></div><div class="time">{{ w.period }}</div>
+      <!-- {% if w.location %}<i>{{ w.location }}</i><br>{% endif %} -->
+      {% if w.role %}<br>{{ w.role }}{% endif %}
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+    
+</section>
+{% endif %}

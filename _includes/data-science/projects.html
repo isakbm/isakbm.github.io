@@ -1,5 +1,5 @@
-{% assign programming = site.data.data.programming %}
-{% assign sidebar = site.data.data.sidebar %}
+{% assign programming = site.data.data-science.programming %}
+{% assign sidebar = site.data.data-science.sidebar %}
 {% if programming %}
 <section class="section">
 
@@ -10,7 +10,7 @@
       <svg class="icon" viewBox="0 0 100 100">
         <use href="{{ site.baseurl }}/assets/images/icons/punchcard.svg#icon"></use>
       </svg>
-    <h2 class="text">Programming Experience</h2>
+    <h2 class="text">Projects</h2>
   </div>
 
   {% for p in programming %}
@@ -23,10 +23,12 @@
       <div class="title">{{ p.title }}</div><br>
       {{ p.description }}<br>
       {% if p.github %}github: <a href="http://github.com/{{ sidebar.github }}/{{ p.github }}">{{ p.github }}</a>{% endif %}
+      {% if forloop.index != forloop.length %}
       <hr>
+      {% endif %}
     </div>
   </div>
   {% endfor %}
     
-</section><!--//section-->
+</section>
 {% endif %}

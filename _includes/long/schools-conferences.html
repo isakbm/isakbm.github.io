@@ -1,5 +1,5 @@
-{% assign courses = site.data.data.courses %}
-{% if courses %}
+{% assign schoolsconfs = site.data.data.schoolsconfs %}
+{% if schoolsconfs %}
 <section class="section summary-section">
 
   <div class="section-title"> 
@@ -7,24 +7,24 @@
       <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
     </svg>
     <svg class="icon" viewBox="0 0 100 100">
-      <use href="{{ site.baseurl }}/assets/images/icons/courses.svg#icon"></use>
+      <use href="{{ site.baseurl }}/assets/images/icons/conferences.svg#icon"></use>
     </svg>
-  <h2 class="text">Highligted Courses</h2>
+  <h2 class="text">PhD Schools / Conferences</h2>
 </div>
 
-  {% for c in courses %}
+  
+  {% for s in schoolsconfs %}
   <div class="listing">
     <svg class="bullet" viewBox="0 0 100 100">
       <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
     </svg>
     <div class="content">
-      <div class="title">{{ c.name }}</div><div class="time">{{ c.year }}</div>
-      <i>{{ c.location }}</i><br>
-      {{ c.coursename }}{% if c.url %}<br><a href="{{ c.url }}">{{ c.linkname | default 'link' }}</a><br>{% endif %}
+      <div class="title">{{ s.name }}</div><div class="time">{{ s.year }}</div>
+      {%if s.venue %}<i>{{ s.venue }}</i>{% endif %}{% if s.location %} - <i>{{ s.location }}</i>{% endif %}
       <hr>
     </div>
   </div>
   {% endfor %}
 
-</section><!--//section-->
+</section>
 {% endif %}

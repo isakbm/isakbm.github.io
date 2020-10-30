@@ -1,3 +1,13 @@
+career-profile: True # TODO get rid of this dependency
+
+heading:
+
+  keywords: physicist | data scientist | developer
+
+  lines:
+    - line: I'm excited about technology, and passionate about producing actionable insights from large datasets.
+    - line: I am looking to apply and expand my skill-set as a data scientist and developer.
+
 edutimeline: True
 
 sidebar:
@@ -6,7 +16,7 @@ sidebar:
 
     # Profile information
     name: Isak Buhl-Mortensen
-    tagline: Physicist and Data Scientist
+    tagline: Data Scientist
     avatar: profile6.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -24,18 +34,19 @@ sidebar:
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
 
+    keywords:
+      - word: physicist
+      - word: data scientist
+      - word: developer
 
     languages:
 
       - idiom: English
         level: Fluent
-
       - idiom: Norwegian
         level: Native
-
       - idiom: Danish
         level: Fluent
-
       - idiom: Swedish
         level: Fluent
 
@@ -44,17 +55,11 @@ sidebar:
 
       - item: Guitar
         link:
-
       - item: Climbing
         link:
-
       - item: Biking
         link:
-
       - item: Travel
-        link:
-
-      - item: Flying
         link:
 
 skills:
@@ -65,57 +70,60 @@ skills:
 
       - name: Python
         level: 5
-
+      - name: Numpy
+        level: 5
+      - name: Pandas
+        level: 5
+      - name: Plotly
+        level: 5
+      - name: Linux
+        level: 4
       - name: PyTorch
         level: 3
-
       - name: C/C++
         level: 4
-
       - name: golang
         level: 5
 
-      - name: Linux
-        level: 4
 
 programming:
 
-  - title: Data Scientist at SINTEF Energy Research
-    description: Using machine learning to predict the Nordic power markets. Meteorological, demographic and power-market data is cleaned, featured, and fed to models. We are using variants of LSTM. (A)
+  # - title: Data Scientist at SINTEF Energy Research
+  #   description: Using machine learning to predict the Nordic power markets. Meteorological, demographic and power-market data is cleaned, featured, and fed to machine learning models. (A)
 
-  - title: Lead developer at The Meteorological Institute of Norway
-    description: Developed a new API called ODA (Observation Data Access), and its backend. The backend is programmed in golang and uses gRPC. It interfaces with distributed storage backends, cockroachdb and cassandra. Geohashes from google's s2geometry library were used as partition and cluster keys to accelerate geospatial searches. (B)
+  # - title: Lead developer at The Meteorological Institute of Norway
+  #   description: Developed a new API called ODA (Observation Data Access), and its backend. The backend is programmed in golang and uses gRPC. It interfaces with distributed storage backends, CockroachDB and Cassandra. Geohashes from google's s2geometry library were used as partition and cluster keys to accelerate geospatial searches. (B)
 
   - title: Canon-RAW Image Decoding
     description: Processing RAW image files from my Canon. Involves decoding from Huffman coded difference values.
     github: Canon-RAW
 
-  - title: 3D Rendering
-    description: Ray-marching the distance function for the 3D Mandelbulb fractal using OpenGL and GLSL. (C)
-    github: Mandelbulb
+#  - title: 3D Rendering
+#    description: Ray-marching the distance function for the 3D Mandelbulb fractal using OpenGL and GLSL. (C)
+#    github: Mandelbulb
 
   - title: Back propagation from scratch
-    description: Implementing a Neural-Net class in C++ with back propagation. Also visualizing the learning in real time using OpenGL (D).
+    description: Implementing a Neural-Net class in C++ with back propagation. Also visualizing the learning in real time using OpenGL.
     github: Basic-Neural-Net
 
   - title: Image recognition
-    description:  Used Haar Cascade for detecting LASER points in submarine images. Used OpenCV, written in Python. (E)
+    description:  Used Haar Cascade for detecting LASER points in submarine images. Used OpenCV, written in Python.
     github: Detecting-LASER-Points
       
-  - title: Kaggle Problems
-    description: Use of F# and Python libraries such as Pandas and scikit-learn for machine learning on kaggle.
-    github: KaggleTitanic
+  # - title: Kaggle Problems
+  #   description: Use of F# and Python libraries such as Pandas and scikit-learn for machine learning on kaggle.
+  #   github: KaggleTitanic
 
-  - title: Genomic Data visualization
-    description: Helped out a PhD researcher in evolutionary genomics with visualizing and processing data from high throughput sequencing. Using Python and pandas. (F)
+  # - title: Genomic Data visualization
+  #   description: Helped out a PhD researcher in evolutionary genomics with visualizing and processing data from high throughput sequencing. Using Python and pandas. (F)
 
-  - title: Potts Model, Monte Carlo
-    description: Simulations of 2D q-state Potts model (generalized Ising-model). Programmed in C++ for Computational Physics course at NTNU. Heat bath algorithm that flips magnetic spins in a temperature gradient using monte carlo sampling and extrapolating in system size to estimate critical temperature and correlation-length exponent. (G)
+  # - title: Potts Model, Monte Carlo
+  #   description: Simulations of 2D q-state Potts model (generalized Ising-model). Programmed in C++ for Computational Physics course at NTNU. Heat bath algorithm that flips magnetic spins in a temperature gradient using monte carlo sampling and extrapolating in system size to estimate critical temperature and correlation-length exponent. (G)
 
 
 research:
 
-  - item: SINTEF Energy Research - Researching the applicability of data driven approaches such as machine learning to predict Nordic power markets. The aim is to improve bidding for wind, hydro and solar, to make them more competitive in a deregulated market by optimizing trades over XBID.
+  - item: SINTEF Energy Research - Using machine learning to predict the Nordic power markets improving bidding strategy for wind, hydro and solar.
 
   - item: The Norwegian Meteorological Institute - Researching the applicability of distributed databases for storing live weather data from IoT sensor networks. Used google's S2Geometry library to create geohashed partition keys.
 
@@ -127,33 +135,35 @@ research:
 
   - item: Participated in PhD schools in Canada, Italy, France, UK, Sweden and Denmark. Interacting with the wider theoretical physics community.
 
-
 work:
-
+   
   - workplace: SINTEF Energy Research
+    job_title: Data Scientist
     location: Trondheim, Norway
     period: 2020 - present
-    role: Focused on short term hydro-power scheduling. Working on SHOP - software used world wide to optimize hydro-power utility. Working on a research project attempting to aid power producers in optimizing bids in the power market - making predictions for the intra-day market.
+    role: Using machine learning to predict the Nordic power markets. Cleaning publicly available datasets from disparate sources, gridded weather forecasts, gridded demographic data and time-series market data. Use of LSTM for time-series modelling, and Wavelet transform to clean data. Also worked on SHOP - software used world wide to optimize hydro-power utility where I improved heuristics for generating bidding curves for maximized profit and utility.
 
   - workplace: The Norwegian Meteorological Institute
+    job_title: Data Engineer 
     location: Oslo, Norway
     period: 2018 - 2020
-    role: "Researcher and system developer. Responsible for real-time data processing and data handling. Contributor to post-processing/data-assimilation techniques for the improvement of local weather forecasts."
+    role: "Lead developer and data engineer, engineered their next generation distributed database backend and an API for reading and writing data efficiently. Used a combination of Cassandra and CockroachDB. Written in golang, using gRPC and s2geometry. Deployed on k8s. Integrated with gitlab dev-ops."
 
   - workplace: National Instruments
+    job_title: Application Engineer
     location: Stockholm, Sweden
     period: 2017 - 2018
-    role: Application Engineer. ELP Program. LabVIEW support.
 
-  - workplace: Copenhagen University - The Niels Bohr Institute 
-    period: 2015 - 2017
-    location: Copenhagen, Denmark
-    role: "Teaching assistant: Responsible for teaching and assistance, writing lecture notes in both string theory and quantum field theory. On average 30 students, 9 hours of lecturing / assistance per week."
+  # - workplace: Copenhagen University - The Niels Bohr Institute 
+  #   job_title:
+  #   period: 2015 - 2017
+  #   location: Copenhagen, Denmark
+  #   role: "Teaching assistant: Responsible for teaching and assistance, writing lecture notes in both string theory and quantum field theory. On average 30 students, 9 hours of lecturing / assistance per week."
     
-  - workplace: Norwegian University of Science and Technology
-    location: Trondheim, Norway
-    period: 2011 - 2012
-    role: "Teaching assistant: Responsible for exercise sessions and grading of assignments for ~ 35 students per course. On average 9 hours per week."
+  # - workplace: Norwegian University of Science and Technology
+  #   location: Trondheim, Norway
+  #   period: 2011 - 2012
+  #   role: "Teaching assistant: Responsible for exercise sessions and grading of assignments for ~ 35 students per course. On average 9 hours per week."
 
 
 achievements:

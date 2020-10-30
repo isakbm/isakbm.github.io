@@ -1,0 +1,28 @@
+{% assign research = site.data.data.research %}
+{% if research %}
+<section class="section">
+
+  <div class="section-title"> 
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/research.svg#icon"></use>
+    </svg>
+    <h2 class="text">Research Experience</h2>
+  </div>
+
+  {% for r in research %}
+  <div class="listing">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
+    <div class="content">
+      {{ r.item }}
+      <hr>
+    </div>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

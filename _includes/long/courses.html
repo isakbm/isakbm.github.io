@@ -1,5 +1,5 @@
-{% assign achievements = site.data.data.achievements %}
-{% if achievements %}
+{% assign courses = site.data.data.courses %}
+{% if courses %}
 <section class="section summary-section">
 
   <div class="section-title"> 
@@ -7,23 +7,24 @@
       <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
     </svg>
     <svg class="icon" viewBox="0 0 100 100">
-      <use href="{{ site.baseurl }}/assets/images/icons/achievements.svg#icon"></use>
+      <use href="{{ site.baseurl }}/assets/images/icons/courses.svg#icon"></use>
     </svg>
-  <h2 class="text">Achievements</h2>
+  <h2 class="text">Highligted Courses</h2>
 </div>
 
-  {% for a in achievements %}
+  {% for c in courses %}
   <div class="listing">
     <svg class="bullet" viewBox="0 0 100 100">
       <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
     </svg>
     <div class="content">
-      <div class="title">{{ a.item }}</div><div class="time">{{ a.year }}</div>
+      <div class="title">{{ c.name }}</div><div class="time">{{ c.year }}</div>
+      <i>{{ c.location }}</i><br>
+      {{ c.coursename }}{% if c.url %}<br><a href="{{ c.url }}">{{ c.linkname | default 'link' }}</a><br>{% endif %}
       <hr>
     </div>
   </div>
   {% endfor %}
 
-
-</section><!--//section-->
+</section>
 {% endif %}
