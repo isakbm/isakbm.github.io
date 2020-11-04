@@ -21,7 +21,8 @@
     <div class="content">
       <div class="title">{{ s.name }}</div><div class="time">{{ s.year }}</div>
       {%if s.venue %}<i>{{ s.venue }}</i>{% endif %}{% if s.location %} - <i>{{ s.location }}</i>{% endif %}
-      <hr>
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
     </div>
   </div>
   {% endfor %}

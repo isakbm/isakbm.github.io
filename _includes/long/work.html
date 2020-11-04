@@ -21,7 +21,8 @@
       <div class="job-title">{{ w.workplace }}</div><div class="time">{{ w.period }}</div>
       {% if w.location %}<i>{{ w.location }}</i><br>{% endif %}<br>
       {% if w.role %}{{ w.role }}{% endif %}
-      <hr>
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
     </div>
   </div>
   {% endfor %}

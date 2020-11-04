@@ -21,7 +21,8 @@
       <div class="title">{{ paper.title }}</div><div class="time">{{ paper.year }}</div>
       {% if paper.publisher %}<i>{{ paper.publisher }}</i><br>{% endif %}
       {% if paper.url %}<a href="{{ paper.url }}">{{ paper.linkname | default 'link' }}</a>{% endif %}
-      <hr>
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
     </div>
   </div>
   {% endfor %}

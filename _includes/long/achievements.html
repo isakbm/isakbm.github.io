@@ -19,7 +19,8 @@
     </svg>
     <div class="content">
       <div class="title">{{ a.item }}</div><div class="time">{{ a.year }}</div>
-      <hr>
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
     </div>
   </div>
   {% endfor %}

@@ -21,7 +21,8 @@
       <div class="title">{{ c.name }}</div><div class="time">{{ c.year }}</div>
       <i>{{ c.location }}</i><br>
       {{ c.coursename }}{% if c.url %}<br><a href="{{ c.url }}">{{ c.linkname | default 'link' }}</a><br>{% endif %}
-      <hr>
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
     </div>
   </div>
   {% endfor %}
