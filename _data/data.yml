@@ -6,7 +6,7 @@ sidebar:
 
     # Profile information
     name: Isak Buhl-Mortensen
-    tagline: Physicist and Data Scientist
+    tagline: Physicist and Lecturer
     avatar: profile6.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -156,6 +156,19 @@ work:
     role: "Teaching assistant: Responsible for exercise sessions and grading of assignments for ~ 35 students per course. On average 9 hours per week."
 
 
+teaching:
+
+  - workplace: Copenhagen University - The Niels Bohr Institute 
+    period: 2015 - 2017
+    location: Copenhagen, Denmark
+    role: "Teaching assistant: Responsible for teaching and assistance, writing lecture notes in both string theory and quantum field theory. On average 30 students, 9 hours of lecturing / assistance per week."
+    
+  - workplace: Norwegian University of Science and Technology
+    location: Trondheim, Norway
+    period: 2011 - 2012
+    role: "Teaching assistant: Responsible for exercise sessions and grading of assignments for ~ 35 students per course. On average 9 hours per week."
+
+
 achievements:
 
   - item: Received the Lørup Scholar Stipend for MSc thesis work.
@@ -200,30 +213,39 @@ presenting:
 
 courses:
 
-  - name: Topics in Physics of Complex System
-    location: NBI - Copenhagen, Denmark
-    year: 2014
+  - name: Introduction to University Pedagogy
+    location: Copenhagen University, Copenhagen, Denmark
+    year: 2016
 
-  - name: Computational Physics
-    location: NTNU - Trondheim, Norway
-    year: "2012"
-    coursename: TFY 4235
-    linkname: ntnu/TFY4235
-    url: http://www.ntnu.edu/studies/courses/TFY4235
+  # - name: Topics in Physics of Complex System
+  #   location: NBI - Copenhagen, Denmark
+  #   year: 2014
+
+  # - name: Computational Physics
+  #   location: NTNU - Trondheim, Norway
+  #   year: "2012"
+  #   coursename: TFY 4235
+  #   linkname: ntnu/TFY4235
+  #   url: http://www.ntnu.edu/studies/courses/TFY4235
   
-  - name: Classical Transport Theory
-    location: NTNU - Trondheim, Norway
-    year: 2012
-    coursename: TFY 4275
-    linkname: ntnu/TFY4275
-    url: http://www.ntnu.edu/studies/courses/TFY4275
+  # - name: Classical Transport Theory
+  #   location: NTNU - Trondheim, Norway
+  #   year: 2012
+  #   coursename: TFY 4275
+  #   linkname: ntnu/TFY4275
+  #   url: http://www.ntnu.edu/studies/courses/TFY4275
 
-  - name: Procedural and Object-Oriented Programming
+  # - name: Procedural and Object-Oriented Programming
+  #   location: NTNU - Trondheim, Norway
+  #   year: 2012
+  #   coursename: TDT 4102
+  #   linkname: ntnu/TDT4102
+  #   url: http://www.ntnu.edu/studies/courses/TDT4102
+
+  - name: Examen Peadagogicum
     location: NTNU - Trondheim, Norway
-    year: 2012
-    coursename: TDT 4102
-    linkname: ntnu/TDT4102
-    url: http://www.ntnu.edu/studies/courses/TDT4102
+    year: 2009
+    coursename: PPU 4000
 
 
 schoolsconfs:
