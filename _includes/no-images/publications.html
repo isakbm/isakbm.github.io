@@ -1,0 +1,31 @@
+{% assign publications = site.data.data-research.publications %}
+{% if publications %}
+<section class="section">
+
+  <div class="section-title"> 
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/publications.svg#icon"></use>
+    </svg>
+  <h2 class="text">Publications / Thesis'</h2>
+</div>
+
+  {% for paper in publications.papers %}
+  <div class="listing">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
+    <div class="content">
+      <div class="title">{{ paper.title }}</div><div class="time">{{ paper.year }}</div>
+      {% if paper.publisher %}<i>{{ paper.publisher }}</i><br>{% endif %}
+      {% if paper.url %}<a href="{{ paper.url }}">{{ paper.linkname | default 'link' }}</a>{% endif %}
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
+    </div>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

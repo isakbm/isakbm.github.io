@@ -1,0 +1,28 @@
+{% assign timeline = site.data.data-research.edutimeline %}
+{% if timeline %}
+<section class="section">
+
+  <div class="section-title"> 
+      <svg class="icon-circle" viewBox="0 0 100 100">
+        <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+      </svg>
+      <svg class="icon" viewBox="0 0 100 100">
+        <use href="{{ site.baseurl }}/assets/images/icons/education.svg#icon"></use>
+      </svg>
+    <h2 class="text">Education</h2>
+  </div>
+
+  <div class="timeline">
+    <svg class="lines" viewBox="0 0 100 25" >
+      <use href="{{ site.baseurl }}/assets/images/new-timeline.svg#lines"></use>
+    </svg>
+    <svg class="text" viewBox="0 0 100 25" width="100%" >
+      <use href="{{ site.baseurl }}/assets/images/new-timeline.svg#text"></use>
+    </svg>
+    <svg class="pins" viewBox="0 0 100 25" width="100%" >
+      <use href="{{ site.baseurl }}/assets/images/new-timeline.svg#pins"></use>
+    </svg>
+  </div>
+  
+</section>
+{% endif %}

@@ -1,0 +1,31 @@
+{% assign schoolsconfs = site.data.data-research.schoolsconfs %}
+{% if schoolsconfs %}
+<section class="section summary-section">
+
+  <div class="section-title"> 
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/conferences.svg#icon"></use>
+    </svg>
+  <h2 class="text">PhD Schools / Conferences</h2>
+</div>
+
+  
+  {% for s in schoolsconfs %}
+  <div class="listing">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
+    <div class="content">
+      <div class="title">{{ s.name }}</div><div class="time">{{ s.year }}</div>
+      {%if s.venue %}<i>{{ s.venue }}</i>{% endif %}{% if s.location %} - <i>{{ s.location }}</i>{% endif %}
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
+    </div>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

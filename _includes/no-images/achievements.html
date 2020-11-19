@@ -1,0 +1,29 @@
+{% assign achievements = site.data.data-research.achievements %}
+{% if achievements %}
+<section class="section summary-section">
+
+  <div class="section-title"> 
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/achievements.svg#icon"></use>
+    </svg>
+  <h2 class="text">Achievements</h2>
+</div>
+
+  {% for a in achievements %}
+  <div class="listing">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
+    <div class="content">
+      <div class="title">{{ a.item }}</div><div class="time">{{ a.year }}</div>
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
+    </div>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

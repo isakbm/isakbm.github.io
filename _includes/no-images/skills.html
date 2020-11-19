@@ -1,0 +1,25 @@
+{% assign skills = site.data.data-research.skills %}
+{% if skills %}
+
+<div class="skillset">
+
+  {% for skill in skills.toolset %}
+  <div class="item">
+
+    <div class="level-title">{{ skill.name }}</div>
+
+    <div class="level-bar">
+      {% for i in (1..skill.level) %}
+        <svg class="level-counter" viewBox="0 0 20 20">
+          <use href="{{ site.baseurl }}/assets/images/icons/coffeebean.svg#bean"></use>
+          <!-- <circle stroke-width="5" stroke="#352815" cy="50" cx="50" r="45" fill="#e3d5b9"/> -->
+        </svg>
+      {% endfor %}
+    </div>
+
+  </div>
+  {% endfor %}
+
+</div>
+
+{% endif %}

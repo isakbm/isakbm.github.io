@@ -1,0 +1,31 @@
+{% assign courses = site.data.data-research.courses %}
+{% if courses %}
+<section class="section summary-section">
+
+  <div class="section-title"> 
+    <svg class="icon-circle" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+    </svg>
+    <svg class="icon" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/courses.svg#icon"></use>
+    </svg>
+  <h2 class="text">Highligted Courses</h2>
+</div>
+
+  {% for c in courses %}
+  <div class="listing">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
+    <div class="content">
+      <div class="title">{{ c.name }}</div><div class="time">{{ c.year }}</div>
+      <i>{{ c.location }}</i><br>
+      {{ c.coursename }}{% if c.url %}<br><a href="{{ c.url }}">{{ c.linkname | default 'link' }}</a><br>{% endif %}
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
+    </div>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

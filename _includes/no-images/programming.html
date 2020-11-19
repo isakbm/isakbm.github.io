@@ -1,0 +1,33 @@
+{% assign programming = site.data.data-research.programming %}
+{% assign sidebar = site.data.data-research.sidebar %}
+{% if programming %}
+<section class="section">
+
+  <div class="section-title"> 
+      <svg class="icon-circle" viewBox="0 0 100 100">
+        <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+      </svg>
+      <svg class="icon" viewBox="0 0 100 100">
+        <use href="{{ site.baseurl }}/assets/images/icons/punchcard.svg#icon"></use>
+      </svg>
+    <h2 class="text">Programming Experience</h2>
+  </div>
+
+  {% for p in programming %}
+  <div class="listing">
+    <svg class="bullet" viewBox="0 0 100 100">
+      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+    </svg>
+    <!-- <img src="{{ site.baseurl }}/assets/images/icons/bullet.svg" class="bullet"> -->
+    <div class="content">
+      <div class="title">{{ p.title }}</div><br>
+      {{ p.description }}<br>
+      {% if p.github %}github: <a href="http://github.com/{{ sidebar.github }}/{{ p.github }}">{{ p.github }}</a>{% endif %}
+      {% if forloop.index != forloop.length %}<hr>{% endif %}
+
+    </div>
+  </div>
+  {% endfor %}
+    
+</section>
+{% endif %}
