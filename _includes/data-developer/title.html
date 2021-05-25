@@ -1,0 +1,21 @@
+{% assign title = site.data.data-developer.sidebar %}
+{% assign heading = site.data.data-developer.heading %}
+{% if title %}
+<section class="title-section">
+
+  <h2 class="title">
+    {{ title.name }}
+  </h2>
+
+  <div class="keywords">
+    Tech Lead / Full Stack Developer
+  </div>
+  
+  <div class="summary">
+  {% for line in heading.lines %}
+    {{ line.line }} <br>
+  {% endfor %}
+  </div>
+
+</section>
+{% endif %}
