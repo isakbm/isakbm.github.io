@@ -13,6 +13,10 @@ I am simply messing around with it, adding some of my own icons and changing the
 1. Fire up the service ``bundle exec jekyll serve``
 1. Your page is hosted at ``localhost:4000`` or some other port.
 
+## Export .html to .pdf
+
+[https://www.sejda.com/html-to-pdf](https://www.sejda.com/html-to-pdf)
+
 ## License
 
 This project is licensed under the [MIT license](LICENSE.txt).
