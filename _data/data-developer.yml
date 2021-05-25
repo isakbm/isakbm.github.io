@@ -71,6 +71,10 @@ skills:
         level: 4
       - name: javascript
         level: 4
+      - name: HTML
+        level: 4
+      - name: CSS
+        level: 4
       - name: .NET
         level: 3
       - name: Linux
