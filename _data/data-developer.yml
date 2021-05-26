@@ -6,7 +6,7 @@ heading:
 
   lines:
     - line: I'm excited about technology and passionate about making an impact as part of a team.
-    - line: I am looking to apply and expand my skill-set as a full stack developer, and tech lead.
+    # - line: I am looking to apply and expand my skill-set as a full stack developer, and tech lead.
 
 edutimeline: True
 
@@ -69,6 +69,8 @@ skills:
         level: 5
       - name: C/C++
         level: 4
+      - name: Rust
+        level: 3
       - name: javascript
         level: 4
       - name: HTML
@@ -85,12 +87,6 @@ skills:
         level: 5
       - name: Azure
         level: 4
-      - name: GitLab
-        level: 4
-      - name: vscode
-        level: 5
-      - name: MSVC
-        level: 5
 
 
 programming:
