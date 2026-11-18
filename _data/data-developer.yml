@@ -139,11 +139,16 @@ research:
   - item: Participated in PhD schools in Canada, Italy, France, UK, Sweden and Denmark. Interacting with the wider theoretical physics community.
 
 work:
-   
+
+  - workplace: laiout
+    job_title: Co-founder & CTO
+    period: 2021 - present
+    role: "Built laiout from the ground up - software that generates floorplans in mere seconds. Responsible for all technical decisions and hiring. Grew the company from three founders to 25+ employees."
+
   - workplace: SINTEF Energy Research
     job_title: Developer & Researcher
     location: Trondheim, Norway
-    period: 2020 - present
+    period: 2020 - 2021
     role: Project leader on 'Connecting SHOP' - developing RESTful API to ease clients use of SHOP, short term hydropower scheduling software (server written in C++/python). Used FastAPI, set up CI/CD, build pipeline on Azure and github actions.
 
   - workplace: The Norwegian Meteorological Institute
