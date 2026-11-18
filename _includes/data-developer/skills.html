@@ -1,28 +1,20 @@
 {% assign skills = site.data.data-developer.skills %}
 {% if skills %}
 
-<div class="skillset">
-
+<div class="container-block">
 
   <h2 class="container-block-title">
-    Skills
+    {{ skills.title }}
   </h2>
 
-  {% for skill in skills.toolset %}
-  <div class="item">
-
-    <div class="level-title">{{ skill.name }}</div>
-
-    <div class="level-bar">
-      {% for i in (1..skill.level) %}
-        <svg class="level-counter" viewBox="0 0 20 20">
-          <use href="{{ site.baseurl }}/assets/images/icons/coffeebean.svg#bean"></use>
-        </svg>
-      {% endfor %}
-    </div>
-
-  </div>
-  {% endfor %}
+  <ul class="list-unstyled interests-list">
+    {% for group in skills.groups %}
+    <li>
+      <strong>{{ group.name }}</strong><br>
+      {{ group.items }}
+    </li>
+    {% endfor %}
+  </ul>
 
 </div>
 

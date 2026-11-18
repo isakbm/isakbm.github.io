@@ -59,34 +59,16 @@ sidebar:
 
 skills:
 
-    title: Skills &amp; Proficiency
+    title: Selected Skills
 
-    toolset:
+    groups:
 
-      - name: Python
-        level: 5
-      - name: Go
-        level: 5
-      - name: C/C++
-        level: 4
-      - name: Rust
-        level: 3
-      - name: javascript
-        level: 4
-      - name: HTML
-        level: 4
-      - name: CSS
-        level: 4
-      - name: .NET
-        level: 3
-      - name: Linux
-        level: 4      
-      - name: Docker
-        level: 5
-      - name: Git
-        level: 5
-      - name: Azure
-        level: 4
+      - name: Leadership
+        items: architecture, hiring, technical strategy
+      - name: Engineering
+        items: distributed systems, APIs, data and machine learning
+      - name: Languages
+        items: Rust, TypeScript, Go, Python, C++
 
 
 programming:
