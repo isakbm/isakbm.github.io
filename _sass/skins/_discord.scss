@@ -9,6 +9,7 @@
     --color-theme:      hsl(from var(--accent) h 70% 80%); // icons, bullets, lines
     --color-sidebar:    hsl(from var(--accent) h 100% 92%); // sidebar background
     --color-text:       hsl(from var(--accent) h 8% 23%);
+    --color-emphasis:   hsl(from var(--accent) h 60% 38%); // roles in entry titles
     --color-link:       hsl(from var(--accent) h 59% 57%);
     --color-link-hover: hsl(from var(--accent) h 59% 42%);
     --color-paper:      hsl(from var(--accent) h 0% 100%);
@@ -21,6 +22,7 @@ $theme-color: var(--color-theme);
 $sidebar-color: var(--color-sidebar);
 $text-color: var(--color-text);
 $text-color-secondary: var(--color-text);
+$emphasis-color: var(--color-emphasis);
 $link-color: var(--color-link);
 $link-hover-color: var(--color-link-hover);
 $paper-color: var(--color-paper);

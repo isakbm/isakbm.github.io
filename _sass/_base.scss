@@ -7,6 +7,7 @@ $page_height: 100%;
 
 // Colours a skin may leave out
 $sidebar-color: $theme-color !default;
+$emphasis-color: darken($theme-color, 30%) !default;
 $link-color: darken($theme-color, 15%) !default;
 $link-hover-color: darken($theme-color, 30%) !default;
 $paper-color: #fff !default;
@@ -365,9 +366,15 @@ p {
                     font-size: 16px;
                     margin-top: 0;
                     margin-bottom: $space-xs;
-                    font-weight: 500;
+                    font-weight: 700;
                     top: 0;
                     width: calc(100% - 80px);
+
+                    // the role, next to the bold name
+                    i {
+                        font-weight: 400;
+                        color: $emphasis-color;
+                    }
                 }
                 // the title's bottom margin sets this gap, not a blank line
                 .title + br, .time + br {
@@ -377,7 +384,7 @@ p {
                     position: absolute;
                     right: 0;
                     top: 0;
-
+                    font-weight: 700;
                 }
                 hr {
                     margin: $space-s 0;
