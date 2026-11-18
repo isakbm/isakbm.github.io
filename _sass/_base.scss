@@ -5,6 +5,13 @@ $sidebar_width: 280px;
 $page_width: 1000px;
 $page_height: 100%;
 
+// Colours a skin may leave out
+$sidebar-color: $theme-color !default;
+$link-color: darken($theme-color, 15%) !default;
+$link-hover-color: darken($theme-color, 30%) !default;
+$paper-color: #fff !default;
+$shadow-color: rgba(0,0,0,0.1) !default;
+
 // Spacing scale. Every gap on the page is one of these.
 $space-xs: 10px; // a title and its own text; items in a list
 $space-s: 20px;  // an entry and its divider
@@ -25,11 +32,15 @@ h1, h2, h3, h4, h5, h6  {
     font-weight: 700;
 }
 
+hr {
+    border-top-color: $divider;
+}
+
 a {
-    color: darken($theme-color, 15%);
+    color: $link-color;
     &:hover {
         text-decoration: underline;
-        color: darken($theme-color, 30%);
+        color: $link-hover-color;
     }
     &:focus {
         text-decoration: none;
@@ -41,16 +52,16 @@ p {
 }
 
 .wrapper {
-    background: $theme-color;
+    background: $sidebar-color;
     max-width: $page_width;
     max-height: $page_height;
     margin: 0 auto;
     position: relative;
-    @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
+    @include box-shadow(0px 2px 4px $shadow-color);
 }
 
 .sidebar-wrapper {
-    background: $theme-color;
+    background: $sidebar-color;
     position: absolute;
     right: 0;
     width: 280px;
@@ -64,7 +75,7 @@ p {
 
     hr {
         //background-color: $text-color;
-        border-color: white; //darken(grey, 20%);
+        border-color: $paper-color; //darken(grey, 20%);
         // border: none;
         width: 100%; // calc(100% - 60px);
         //height: 1px;
@@ -238,7 +249,7 @@ p {
 
     height: $page_height;
 
-    background: #fff;
+    background: $paper-color;
     padding: $space-m;
     padding-right: $sidebar_width + $space-m;
     color: $text-color;
@@ -298,7 +309,7 @@ p {
             }
             a, p, h2, .text{
                 color: $text-color;
-                background-color: white;
+                background-color: $paper-color;
                 position: absolute;
                 padding-left: 10px;
                 padding-right: 10px;

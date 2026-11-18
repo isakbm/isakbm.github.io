@@ -1,10 +1,30 @@
-/* Discord variables */
-$theme-color: #8dbce2;
-$text-color: #36393f;
-$text-color-secondary: #36393f;
-$text-grey: #97AAC3;
-$divider: #e8e8e8;
-$lighter-grey: #352815;
-$darker-grey: #666;
-$smoky-white: #666;
+/* Discord colours */
+
+// Every colour on the page is derived from the hue of --accent.
+// Change --accent to recolour the CV; only its hue is used.
+// Each line below then picks its own saturation and lightness.
+:root {
+    --accent: hsl(207 100% 50%);
+
+    --color-theme:      hsl(from var(--accent) h 70% 80%); // icons, bullets, lines
+    --color-sidebar:    hsl(from var(--accent) h 100% 92%); // sidebar background
+    --color-text:       hsl(from var(--accent) h 8% 23%);
+    --color-link:       hsl(from var(--accent) h 59% 57%);
+    --color-link-hover: hsl(from var(--accent) h 59% 42%);
+    --color-paper:      hsl(from var(--accent) h 0% 100%);
+    --color-divider:    hsl(from var(--accent) h 20% 80%);  // rules between entries
+    --color-backdrop:   hsl(from var(--accent) h 0% 40%);  // behind the paper
+    --color-shadow:     hsl(from var(--accent) h 0% 0% / 0.1);
+}
+
+$theme-color: var(--color-theme);
+$sidebar-color: var(--color-sidebar);
+$text-color: var(--color-text);
+$text-color-secondary: var(--color-text);
+$link-color: var(--color-link);
+$link-hover-color: var(--color-link-hover);
+$paper-color: var(--color-paper);
+$divider: var(--color-divider);
+$smoky-white: var(--color-backdrop);
+$shadow-color: var(--color-shadow);
 $heart: #fb866a;
