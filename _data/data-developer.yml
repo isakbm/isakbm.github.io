@@ -65,6 +65,8 @@ skills:
 
       - name: Leadership
         items: architecture, hiring, technical strategy
+      - name: Communication
+        items: teaching, presenting, technical writing
       - name: Engineering
         items: distributed systems, APIs, data and machine learning
       - name: Languages
@@ -148,6 +150,13 @@ work:
     location: Stockholm, Sweden
     period: 2017 - 2018
     role: "Applications Engineer - tech support on National Instruments product line and mainly LabView."
+
+  - workplace: The Niels Bohr Institute
+    url: https://nbi.ku.dk/english/
+    job_title: PhD Fellow
+    location: Copenhagen, Denmark
+    period: 2014 - 2017
+    role: "Research in theoretical physics - integrability applied to gauge/gravity duality. Published four papers, two in Physical Review Letters and two in Journal of High Energy Physics. Taught string theory and quantum field theory to classes of about 30 students."
 
   # - workplace: Copenhagen University - The Niels Bohr Institute 
   #   job_title:
