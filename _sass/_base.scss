@@ -6,6 +6,8 @@ $page_width: 1000px;
 $page_height: 100%;
 
 // Colours a skin may leave out
+$heading-color: $theme-color !default;
+$bullet-color: $theme-color !default;
 $sidebar-color: $theme-color !default;
 $emphasis-color: darken($theme-color, 30%) !default;
 $link-color: darken($theme-color, 15%) !default;
@@ -303,7 +305,7 @@ p {
                 fill: $text-color-secondary;
             }
             .icon-circle {
-                fill: $theme-color;
+                fill: $heading-color;
                 //stroke: $text-color-secondary;
                 //stroke-width: 2px;
                 position: absolute;
@@ -328,7 +330,7 @@ p {
             margin-top: $main_wrapper_padding / 2;
             margin-left: 15px;
             margin-right: - $main_wrapper_padding / 2;
-            border-top: 1px solid $theme-color;
+            border-top: 1px solid $heading-color;
             top: $main_wrapper_padding / 2;
             left: 0;
             right: 0;
@@ -353,9 +355,9 @@ p {
                 //margin-top: 0;
                 margin-bottom: -17px;
                 width: 14px;
-                fill: $theme-color;
+                fill: $bullet-color;
                 stroke-width: 0.0;
-                stroke: $theme-color;
+                stroke: $bullet-color;
             }
             .content{
                 position: relative;
@@ -384,7 +386,8 @@ p {
                     position: absolute;
                     right: 0;
                     top: 0;
-                    font-weight: 700;
+                    color: #777777;
+                    font-weight: 100;
                 }
                 hr {
                     margin: $space-s 0;

@@ -6,7 +6,9 @@
 :root {
     --accent: hsl(207 100% 50%);
 
-    --color-theme:      hsl(from var(--accent) h 70% 80%); // icons, bullets, lines
+    --color-theme:      hsl(from var(--accent) h 70% 80%); // education timeline
+    --color-heading:    hsl(from var(--accent) h 100% 92%); // heading icon circle and its line
+    --color-bullet:     hsl(from var(--accent) h 100% 92%); // bullets next to entries
     --color-sidebar:    hsl(from var(--accent) h 100% 92%); // sidebar background
     --color-text:       hsl(from var(--accent) h 8% 23%);
     --color-emphasis:   hsl(from var(--accent) h 60% 38%); // roles in entry titles
@@ -19,6 +21,8 @@
 }
 
 $theme-color: var(--color-theme);
+$heading-color: var(--color-heading);
+$bullet-color: var(--color-bullet);
 $sidebar-color: var(--color-sidebar);
 $text-color: var(--color-text);
 $text-color-secondary: var(--color-text);
