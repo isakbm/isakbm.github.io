@@ -77,6 +77,7 @@ p {
     }
 
     hr {
+        display: none; // space alone separates the sidebar sections
         //background-color: $text-color;
         border-color: $paper-color; //darken(grey, 20%);
         // border: none;
@@ -271,11 +272,16 @@ p {
         }
         .keywords{
             text-align: center;
-            margin-bottom: $space-xs;
+            margin-bottom: $space-s;
             // font-weight: 900;
         }
         .summary{
             text-align: center;
+            font-style: italic;
+            // narrow, so the line wraps into two even lines
+            max-width: 400px;
+            margin: 0 auto;
+            text-wrap: balance;
         }
     }
 

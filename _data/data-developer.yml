@@ -2,10 +2,10 @@ career-profile: True # TODO get rid of this dependency
 
 heading:
 
-  keywords: CTO - Developer - Researcher - PhD in Physics
+  keywords: CTO - PhD in Physics
 
   lines:
-    - line: I'm excited about technology and passionate about making an impact as part of a team.
+    - line: Physicist turned founder. I took laiout from three people and no code to a product and a team of 25+.
     # - line: I am looking to apply and expand my skill-set as a full stack developer, and tech lead.
 
 edutimeline: True
