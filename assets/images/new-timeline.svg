@@ -272,7 +272,10 @@
  </g>
  <g id="pins" transform="translate(0,-5)" stroke-linecap="square">
   <circle transform="rotate(30)" cx="9.2657" cy="4.3666" r="1.0583"/>
+  <circle transform="rotate(30)" cx="9.2657" cy="4.3666" r="0.3528" fill="currentColor"/>
   <circle transform="rotate(30)" cx="33.743" cy="-9.8778" r="1.0583"/>
+  <circle transform="rotate(30)" cx="33.743" cy="-9.8778" r="0.3528" fill="currentColor"/>
   <circle transform="rotate(30)" cx="61.764" cy="-26.055" r="1.0583"/>
+  <circle transform="rotate(30)" cx="61.764" cy="-26.055" r="0.3528" fill="currentColor"/>
  </g>
 </svg>

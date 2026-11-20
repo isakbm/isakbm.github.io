@@ -373,10 +373,20 @@ p {
                     top: 0;
                     width: calc(100% - 80px);
 
-                    // the role, next to the bold name
+                    // the hyphen between role and company
+                    .sep {
+                        font-weight: 400;
+                    }
+
+                    // the company, next to the bold role
                     i {
                         font-weight: 400;
                         color: $emphasis-color;
+
+                        // a company link keeps this colour; underline on hover says it is a link
+                        a {
+                            color: inherit;
+                        }
                     }
                 }
                 // the title's bottom margin sets this gap, not a blank line
@@ -420,6 +430,7 @@ p {
     }
     .pins {
         fill: $theme-color;
+        color: $text-color-secondary; // the centre dot, as in the bullets
         stroke: $text-color-secondary;
         stroke-width: 0;
         position: relative;

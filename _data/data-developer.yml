@@ -123,23 +123,27 @@ research:
 work:
 
   - workplace: laiout
+    url: https://www.laiout.co
     job_title: Co-founder & CTO
     period: 2021 - present
     role: "Built laiout from the ground up - software that generates floorplans in mere seconds. Responsible for all technical decisions and hiring. Grew the company from three founders to 25+ employees."
 
   - workplace: SINTEF Energy Research
+    url: https://www.sintef.no/en/sintef-energy/
     job_title: Developer & Researcher
     location: Trondheim, Norway
     period: 2020 - 2021
     role: Project leader on 'Connecting SHOP' - developing RESTful API to ease clients use of SHOP, short term hydropower scheduling software (server written in C++/python). Used FastAPI, set up CI/CD, build pipeline on Azure and github actions.
 
   - workplace: The Norwegian Meteorological Institute
+    url: https://www.met.no/en
     job_title: Developer / Data Engineer
     location: Oslo, Norway
     period: 2018 - 2020
     role: "Lead developer and data engineer, engineered their next generation distributed database backend and an API for reading and writing data efficiently. Used a combination of Cassandra and CockroachDB. Written in golang, using gRPC and s2geometry. Deployed on k8s. Integrated with gitlab dev-ops (CI/CD)."
 
   - workplace: National Instruments
+    url: https://www.ni.com
     job_title: Application Engineer
     location: Stockholm, Sweden
     period: 2017 - 2018

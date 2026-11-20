@@ -18,7 +18,7 @@
       <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
     </svg>
     <div class="content">
-      <div class="job-title">{{ w.workplace }} - <i>{{w.job_title}}</i></div><div class="time">{{ w.period }}</div>
+      <div class="job-title">{{ w.job_title }} <span class="sep">-</span> <i>{% if w.url %}<a href="{{ w.url }}">{{ w.workplace }}</a>{% else %}{{ w.workplace }}{% endif %}</i></div><div class="time">{{ w.period }}</div>
       <!-- {% if w.location %}<i>{{ w.location }}</i><br>{% endif %} -->
       {% if w.role %}<br>{{ w.role }}{% endif %}
       {% if forloop.index != forloop.length %}<hr>{% endif %}
