@@ -3,7 +3,7 @@
 // Font files live in assets/fonts, so nothing is fetched from another server.
 // Each file is a variable font: it holds every weight from 100 to 900.
 // A browser only downloads the files for the font the page actually uses.
-// To try Inter, change the font-family on body in _base.scss,
+// To switch between them, change the font-family on body in _base.scss,
 // and the two preload lines in _includes/head.html.
 // font-display: block means text waits for the font instead of
 // showing in a stand-in font first and then jumping.
