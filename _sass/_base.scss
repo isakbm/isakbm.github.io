@@ -356,6 +356,7 @@ p {
                 margin-bottom: -17px;
                 width: 14px;
                 fill: $bullet-color;
+                color: $text-color-secondary; // the centre dot, same as the heading icons
                 stroke-width: 0.0;
                 stroke: $bullet-color;
             }
