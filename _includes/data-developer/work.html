@@ -4,10 +4,10 @@
 
   <div class="section-title"> 
     <svg class="icon-circle" viewBox="0 0 100 100">
-      <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+      <use href="#icon-circle"></use>
     </svg>
     <svg class="icon" viewBox="0 0 100 100">
-      <use href="{{ site.baseurl }}/assets/images/icons/work.svg#icon"></use>
+      <use href="#icon-work"></use>
     </svg>
   <h2 class="text">Work Experience</h2>
   </div>  
@@ -15,7 +15,7 @@
   {% for w in work %}
   <div class="listing">
     <svg class="bullet" viewBox="0 0 100 100">
-      <use href="{{ site.baseurl }}/assets/images/icons/bullet.svg#bullet"></use>
+      <use href="#icon-bullet"></use>
     </svg>
     <div class="content">
       <div class="job-title">{{ w.job_title }} <span class="sep">-</span> <i>{% if w.url %}<a href="{{ w.url }}">{{ w.workplace }}</a>{% else %}{{ w.workplace }}{% endif %}</i></div><div class="time">{{ w.period }}</div>

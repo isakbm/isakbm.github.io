@@ -1,28 +1,33 @@
-{% assign timeline = site.data.data.edutimeline %}
-{% if timeline %}
+{% assign education = site.data.data-developer.education %}
+{% if education %}
 <section class="section">
 
   <div class="section-title"> 
       <svg class="icon-circle" viewBox="0 0 100 100">
-        <use href="{{ site.baseurl }}/assets/images/icons/education.svg#circle"></use>
+        <use href="#icon-circle"></use>
       </svg>
       <svg class="icon" viewBox="0 0 100 100">
-        <use href="{{ site.baseurl }}/assets/images/icons/education.svg#icon"></use>
+        <use href="#icon-education"></use>
       </svg>
     <h2 class="text">Education</h2>
   </div>
 
-  <div class="timeline">
-    <svg class="lines" viewBox="0 0 100 25" >
-      <use href="{{ site.baseurl }}/assets/images/new-timeline.svg#lines"></use>
-    </svg>
-    <svg class="text" viewBox="0 0 100 25" width="100%" >
-      <use href="{{ site.baseurl }}/assets/images/new-timeline.svg#text"></use>
-    </svg>
-    <svg class="pins" viewBox="0 0 100 25" width="100%" >
-      <use href="{{ site.baseurl }}/assets/images/new-timeline.svg#pins"></use>
-    </svg>
+  <div class="edu-timeline">
+    {% for e in education %}
+    <div class="edu-item">
+      <svg class="edu-pin" viewBox="0 0 100 100">
+        <use href="#icon-bullet"></use>
+      </svg>
+      <div class="edu-year">{{ e.year }}</div>
+      <div class="edu-text">
+        <strong>{{ e.degree }}</strong>
+        {{ e.field }}<br>
+        {{ e.university }}
+        {% if e.institute %}<br>{{ e.institute }}{% endif %}
+      </div>
+    </div>
+    {% endfor %}
   </div>
-  
+
 </section>
 {% endif %}

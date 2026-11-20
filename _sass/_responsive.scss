@@ -24,6 +24,42 @@
         margin-bottom: 0;
     }
 
+    // the education timeline runs down the page instead of across
+    .main-wrapper .edu-timeline {
+        flex-direction: column;
+
+        // one line from the first pin down, joining the items
+        .edu-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            bottom: -10px;
+            border-left: 1px solid $theme-color;
+        }
+        .edu-item:last-child::before {
+            bottom: 0;
+        }
+        .edu-pin {
+            top: 3px; // level with the year
+        }
+        .edu-text {
+            border: 0;
+            &::before {
+                display: none;
+            }
+        }
+        .edu-item:last-child .edu-text {
+            padding-bottom: 0;
+        }
+        .edu-year {
+            order: 0; // above the degree, next to the pin
+            margin-left: 0;
+            padding: 0 0 0 23px;
+            font-size: inherit;
+        }
+    }
+
 
 }
 /* Small devices (tablets, 768px and up) */

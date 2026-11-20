@@ -3,5 +3,6 @@
 ---
 
 @charset "utf-8";
+@import "fonts"; // Roboto and Inter, from assets/fonts
 @import "skins/discord"; // site.theme_skin | default: 'blue' }}"; // skin
 @import "default"; // main partials

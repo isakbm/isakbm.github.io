@@ -8,7 +8,24 @@ heading:
     - line: Physicist turned founder. I took laiout from three people and no code to a product and a team of 25+.
     # - line: I am looking to apply and expand my skill-set as a full stack developer, and tech lead.
 
-edutimeline: True
+education:
+
+  - year: 2012
+    degree: Bachelor of Science
+    field: Physics
+    university: Norwegian University of Science and Technology
+
+  - year: 2014
+    degree: Master of Science
+    field: Theoretical Physics
+    university: University of Copenhagen
+    institute: Niels Bohr Institute
+
+  - year: 2017
+    degree: PhD
+    field: Theoretical Physics
+    university: University of Copenhagen
+    institute: Niels Bohr Institute
 
 sidebar:
     about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar

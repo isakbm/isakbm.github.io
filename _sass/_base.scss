@@ -419,6 +419,59 @@ p {
 
     }
 
+// Education timeline: one column per degree, a pin on a vertical line,
+// all standing on a shared baseline with the year below it.
+.edu-timeline {
+    display: flex;
+
+    .edu-item {
+        flex: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    // same pin as the entry bullets, centred on the vertical line
+    .edu-pin {
+        position: absolute;
+        top: 4px;
+        left: -7px;
+        z-index: 1; // on top of the line
+        width: 14px;
+        fill: $theme-color;
+        color: $text-color-secondary; // the centre dot
+    }
+    .edu-text {
+        flex: 1;
+        // text starts where the text of the entries above starts
+        padding: 0 $space-xs $space-s 23px;
+        border-bottom: 1px solid $theme-color;
+        position: relative;
+
+        // the vertical line, starting at the centre of the pin
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 11px;
+            bottom: 0;
+            border-left: 1px solid $theme-color;
+        }
+        // the degree: same size and gap to its text as an entry title
+        strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: $space-xs;
+        }
+    }
+    .edu-year {
+        order: 1; // below the baseline
+        margin-left: -7px;
+        padding-top: 5px;
+        font-size: 12px;
+    }
+}
+
+// old drawn timeline, still used by the other page variants
 .timeline {
     position: relative;
     // padding-bottom: 160px;

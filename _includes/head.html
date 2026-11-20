@@ -20,6 +20,11 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/font-awesome/css/all.css">
 
   <!-- Theme CSS -->
+  <!-- fetch the page font straight away, so text never shows in another font first -->
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ site.baseurl }}/assets/fonts/roboto-latin-wght-normal.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ site.baseurl }}/assets/fonts/roboto-latin-wght-italic.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ site.baseurl }}/assets/plugins/font-awesome/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{{ site.baseurl }}/assets/plugins/font-awesome/webfonts/fa-brands-400.woff2">
   <link id="theme-style" rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
